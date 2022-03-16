@@ -1,0 +1,12 @@
+cascading : HTML element는 하나 이상의 스타일에 영향을 받을 수 있기 때문에, 어떤 스타일을 적용 받을지에 대한 우선순위를 결정
+	Author Style  -> User Style  -> Browser 
+	important : 이 태그는 연결고리를 끊는다.
+
+
+selectors 
+	Universal *
+	type Tag
+	ID #id
+	Class .class
+	state :
+	Attribute []
