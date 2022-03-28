@@ -1,0 +1,53 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin : 0; padding: 0}
+        #wrap { height: 1000px; color:#fff; font-size: 30px; text-align: center; text-transform: uppercase;}
+        #header-wrap {width: 100%; height: 100px; background-color: #8d6e63;}
+        #banner-wrap {width: 100%; height: 300px; background-color: #a1887f;}
+        #content-wrap {width: 100%; height: 500px; background-color: #bcaaa4;}
+        #footer-wrap{width: 100%; height: 100px; background-color: #d7ccc8;}
+
+
+        .header-container {width: 1000px; height: 100px; line-height: 100px; margin: 0 auto; background-color: #3e2723;}
+        .banner-container {width: 1000px; height: 300px; line-height: 300px; margin: 0 auto; background-color: #4e342e;}
+        .content-container {width: 1000px; height: 500px; line-height: 500px; margin: 0 auto; background-color: #5d4037;}
+        .footer-container {width: 1000px; height: 100px; line-height: 100px; margin: 0 auto; background-color: #6d4c41;}
+    </style>
+    </style>
+</head>
+<!-- 자식에 width값이 있다면 부모는 없어도 된다.-->
+<body>
+    
+    <div id="wrap">
+        <div id = "header-wrap">
+            <div class="header-container">
+                header
+            </div>
+        </div>
+
+        <div id = "banner-wrap">
+            <div class="banner-container">
+                banner
+            </div>
+        </div>
+
+        <div id = "content-wrap">
+            <div class="content-container">
+                content
+            </div>
+        </div>
+        <div id = "footer-wrap">
+            <div class="footer-container ">
+                footer
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
