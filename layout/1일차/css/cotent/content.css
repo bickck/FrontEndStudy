@@ -1,0 +1,29 @@
+
+#content #content-container-one {
+    display: flex;
+    height: 50%;
+}
+
+#content #content-container-two{
+    background: white;
+    height: 50%;
+}
+
+#content #content-container-one #content-top{
+    width: 40%;
+    
+    background: salmon;
+    
+}
+
+#content #content-container-one #content-middle {
+    width: 40%;
+    
+    background: beige;
+}
+
+#content #content-container-one #content-bottom {
+    width: 40%;
+   
+    background: wheat;
+}
