@@ -1,0 +1,50 @@
+
+
+/* header  */
+#header { 
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background: rgb(255, 168, 168);    
+}
+/* logo */
+#header #header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: auto;
+    background: #fff;
+}
+/* nav */
+#header #header-nav {
+    width: 45%;
+    height: auto;
+    background: #eee;
+}
+
+#header #header-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+#header #header-nav li {
+   
+   padding: 25px 30px ;
+    
+}
+
+/* account */
+#header #header-account {
+    width: 40%;
+    height: auto;
+    background: #444;
+}
+
+#header-style {
+    display: flex;
+    align-items: center;
+}

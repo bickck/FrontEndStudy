@@ -1,0 +1,88 @@
+
+<!-- 04_form/27_Quiz_form.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz form</title>
+</head>
+<body>
+<!-- 
+	# 주문정보.png 파일의 내용을 구현하세요
+ -->
+	<h2> 주문 정보 </h2>
+	<form action="">
+		<fieldset>
+			<legend> 고객 정보 </legend>
+			<p>고객명 : <input type="text" id="user_name" name="nserName"></p>
+			<p>전화번호(필수) : <input type="tel" id="phone" name="phone" required></p>
+			<p>E-mail : <input type="email" id="user_mail" name="userMail"></p>
+			<p>피자선택(필수) : 
+				<select id="pizza_menu" name="pizzaMenu" required>
+					<option value="">피자를 선택하세요</option>
+					<option value="pizza1">컴피네이션 피자</option>
+					<option value="pizza2">치즈 피자</option>
+					<option value="pizza3">고무마 피자</option>
+				</select>
+			</p>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> 피자 사이즈(필수)</legend>
+			<input type="radio" id="small" name="size" value="small">
+			<label for="small"> Small </label><br><br>
+			<input type="radio" id="medium" name="size" value="medium" checked>
+			<label for="medium"> Medium </label><br><br>
+			<input type="radio" id="large" name="size" value="large">
+			<label for="large"> Large </label><br>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> 토핑 선택 </legend>
+			<input type="checkbox" id="toping" name="toping1" value="toping1">
+			<label for="toping"> 베이컨 </label><br><br>
+			<input type="checkbox" id="toping" name="toping2" value="toping2">
+			<label for="toping"> 치즈 </label><br><br>
+			<input type="checkbox" id="toping" name="toping3" value="toping3">
+			<label for="toping"> 양파 </label><br><br>
+			<input type="checkbox" id="toping" name="toping4" value="toping4">
+			<label for="toping"> 버섯 </label><br>
+		</fieldset>
+		<p>희망 배송 시간 : <input type="time" id="time" name="time"></p>
+		<p>배송시 요청사항<br>
+			<textarea name="memo" rows="5" cols="50"></textarea>
+		</p>
+		<br>
+		<input type="submit" value="주문하기">
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
