@@ -1,0 +1,227 @@
+
+<!-- 02_text/01_css_font.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text font 속성</title>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+	<h1>text font 속성</h1>
+	<p class="size"> 글자크기 30 </p>
+	<p class="basic"> 기본 글자크기 </p>
+	<p class="default"> 글자크기 16 </p>
+	<style type="text/css">
+	/*  
+	font-size
+	- 글자 크기 지정
+	*/
+	.size { font-size: 30px; }
+	.default { font-size: 16px; } /* body 기본 글씨 크기 : 16px, 1em, 100% 기본값 */
+	</style>
+	
+	<p class="family"> 글꼴 </p>
+	<p class="font_serif"> serif 글꼴 </p>
+	<style>
+	/* 
+	font-family 
+	- 폰트를 지정하고, 컴퓨터에 해당 폰트가 없으면 적용되지 않습니다
+	- 폰트는 여러개 지정이 가능합니다. 첫번째 폰트가 없을 경우 다음에 지정된 폰트를 적용합니다
+	   마지막 폰트는 OS 기본 설치되는 generic-family 폰트(serif, sans-serif, monospace)를 지정하는게 일반적 입니다 
+	- 폰트명은 여러 단어인 경우에는 따옴표를 사용하고, 한단어인 경우에는 적용하지 않아도 됩니다 
+	 */
+	.family { font-family: Dotum; }
+	.font_serif { font-family: "없는 글꼴", serif; }
+	</style>
+	
+	<p class="weight"> 글자 굵기 </p>
+	<h2 class="normal"> 제목 2 </h2>
+	<p><strong>강한 강조</strong>, <em>약한 강조</em></p>
+	<p class="light"> 글자 굵기 - lighter </p>
+	<style>
+	/*
+	font-weight
+	- 글자 굵기 지정 : normal, bold, lighter
+	*/
+	.weight { font-weight: bold; }
+	.normal, strong { font-weight: normal; }
+	.lisght { font-weight: lighter; }
+	</style>
+	
+	<p class="italic"> 글자 스타일 - italic </p>
+	<p><em class="style_normal">약한 강조</em></p>
+	<style>
+	/*  
+	font-style
+	- 글자 기울기 : normal, italic
+	*/
+	.italic { font-style: italic; }
+	.style_normal { font-style: normal; }
+	</style>
+	
+	<p class="variant">HOME, home</p>
+	<style>
+	/*  
+	font-variant
+	- 소문자를 대문자로 변환. 크기는 일반 대문자에 비해서 작습니다 : small-caps 
+	*/
+	.variant { font-variant: small-caps; }
+	</style>
+	
+	<p> 글자 줄간격 : 기본<br>글자 줄간격 : 기본</p>
+	<p class="line_300"> 글자 줄간격 : 300%<br>글자 줄간격 : 300%</p>
+	<p class="line_70"> 글자 줄간격 : 70%<br>글자 줄간격 : 70%</p>
+	<style>
+	/*
+	line-height
+	- 텍스트의 높이 지정. 기본 line-height 는 약 120%
+	*/
+	.line_300 { line-height: 300%;}
+	.line_70 { line-height: 70%;}
+	</style>
+	
+	<p class="font_a">FONT, font 속성에 한번에 값을 넣어서 설정이 가능합니다. 이때는 순서가 중요합니다</p>
+	<p class="font_b">font 속성에는 font-size, font-famliy 속성이 반드시 들어가야 합니다</p>
+	<style>
+	/*
+	font 속성 순서
+	- font : font-style | font-variant | font-weight | font-size/line-height | font-family
+	  > font 속성에는 font-size, font-famliy 속성이 반드시 들어가야 합니다
+	*/
+	.font_a { 
+		font : italic small-caps bold 40px/1.5 serif;
+	}
+	.font_b {
+		font : bold 30px monospace;
+	}
+	</style>
+	
+	<p class="indent">들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50들여쓰기50
+	</p>
+	<style>
+	/*  
+	text-indent
+	- 들여쓰기. 한 문단에서 첫번째 줄에만 적용됩니다
+	*/
+	.indent { text-indent: 30px; }
+	</style>
+	
+	<p class="center"> 가로정렬 센터 </p>
+	<p class="right">가로정렬 오른쪽</p>
+	<p class="left">가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽가로정렬 왼쪽</p>
+	<p class="justify"> 가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽가로정렬 양쪽</p>
+	<a class="link_align" href=""> 링크 </a>
+	<style>
+	/*
+	text-align
+	- 텍스트 수평정렬을 정의합니다 ( center, right, left, justfy ) 
+	*/
+	.center { text-align: center; }
+	.right { text-align: right; }
+	.left { text-align: left; }
+	.justify { text-align: justify; }
+	.link_align { text-align: right; }
+	</style>
+	
+	<p><a class="line_none" href=""> text 라인 </a></p>
+	<p class="line_overline"> text 라인 </p>
+	<p class="line_line-through"> text 라인 </p>
+	<p class="line_underline"> text 라인 </p>
+	<style>
+	/*  
+	text-decoration
+	- 링크의 라인을 제거하거나, text 에 라인을 적용할 때 사용합니다
+	  > none(라인 제거), overline(윗줄), line-through(중간줄), underline(밑줄)
+	*/
+	.line_none { text-decoration: none; }
+	.line_overline{ text-decoration: overline; } 
+	.line_line-through{ text-decoration: line-through; }
+	.line_underline{ text-decoration: underline; }
+	</style>
+	
+	<p class="letter"> 글자 사이 간격</p>
+	<style>
+	/*  
+	letter-spacing
+	- 글자  사이의 간격을 지정합니다
+	*/
+	.letter { letter-spacing: 30px; }
+	</style>
+	
+	<p class="word"> 단어 사이 간격 </p>
+	<style>
+	/*  
+	word-spacing
+	- 단어 사이의 간격을 지정합니다
+	*/
+	.word { word-spacing: 30px; }
+	</style>
+	
+	<p class="upper"> text-transform 영문 소문자를 대문자로</p>
+	<p class="lower"> TEXT-transform 영문 대문자를 소문자로</p>
+	<p class="capital"> text-transform 첫글자만 대문자로</p>
+	<style>
+	/*  
+	text-transform
+	- 대소문자를 전환 합니다 
+	*/
+	.upper { text-transform: uppercase;}
+	.lower { text-transform: lowercase;}
+	.capital { text-transform: capitalize;}
+	</style>
+	
+	<p class="pre">공백문자                                                                                       white-space 사용</p>
+	<p class="nowrap">공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리공백처리</p>
+	<style>
+	/*  
+	white-space
+	- 요소안에 공백을 처리할 때 사용합니다
+	  > 속성값                  라인변경             space/tab      자동 라인변경
+	    normal        무시                   1번만 반영                      O
+	    nowrap        무시                   1번만 반영                      X
+	    pre           반영                  그대로 반영                      X
+	    pre-wrap      반영                  그대로 반영                      O
+	    pre-line	    반영                   1번만 반영                      O
+	*/ 
+	.pre{ white-space: pre; }
+	.nowrap { white-space: nowrap; }
+	</style>
+	
+	<p class=""></p>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+.txt1 {
+    font-family: "돋움";
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+.txt2 {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "굴림";
+    color: lime;
+    text-indent: 50px;
+    line-height: 1.2;
+}
+.txt3 {
+    color: blue;
+    font-family: "굴림";
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 50px;
+}
+.txt3:first-child {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: " HY견고딕";
+    text-decoration: line-through;
+    color: olive;
+
+}
+.txt4 {
+    color: red;
+    text-align: center;
+}
+.txt5 {
+    font-size: 20px;
+    font-family: "궁서";
+}
+.txt6 {
+    font-size: 25px;
+    color: red;
+}
+.txt7 {
+    font-weight: bold;
+    font-family: "바탕체";
+    font-size: 20px;
+    line-height: 1.2;
+}
+.txt8 {
+    font-size: 20px;
+    color: lime;
+    text-decoration: underline;
+}
+.txt9 {
+    font-size: 20px;
+    font-family: "HY견고딕";
+    text-decoration: underline;
+    color: #f0f;
+}
+.txt10 {
+    font-weight: bold;
+    font-style: oblique;
+    color: red;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "돋움";
+    text-decoration: underline;
+    text-align: right;
+}
