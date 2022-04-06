@@ -9,7 +9,9 @@ let toDos = [];
 function deleteTodo(event) {
     const li = event.target.parentElement;
     li.remove();
-   
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
+    saveToDos();
+
     // 여기에 백엔드에게 데이터 지워달라고 신호를 보내면 됌
     // 백엔드에서 신호 보내진 것으로 DB데이터에 지워버리면 끝?
 }
@@ -56,5 +58,6 @@ const savedTodos = localStorage.getItem(toDos_Key);
 if(savedTodos !== null){
     const parsedToDos = JSON.parse(savedTodos);
     toDos = parsedToDos;
-    parsedToDos.array.forEach(paintToDo);
+    parsedToDos.forEach(paintToDo);
 }
+

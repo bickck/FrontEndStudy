@@ -6,6 +6,7 @@ const link = document.querySelector("a");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
+// 서버로 로그인 요청
 function onLoginSubmit(event){
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);

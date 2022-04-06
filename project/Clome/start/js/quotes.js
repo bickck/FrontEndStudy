@@ -49,11 +49,24 @@ const quotes =[
     },
 ];
 
-
+const quote_container = document.querySelector("#quote-container div:first-child");
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
-const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
+function changeQuote(quetos) {
+    
+    const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    quote.innerText = todayQuote.quote;
+    author.innerText = `-${todayQuote.author}-`;
+    
+}
 
-quote.innerText = todayQuote.quote;
-author.innerText = todayQuote.author;
+function requestQuote() {
+    const url = `http://localhost:8080/api/quetos`
+    fetch(url).then(response => response.text()).then(data=>{ 
+        console.log(data);
+    });
+}
+
+setInterval(changeQuote,5000);
+requestQuote();

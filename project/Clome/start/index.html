@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum App</title>
 
-    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
 
-    <form id="login-form" class="hidden">
-        <input type="text">
-        <button type="submit">log in</button>
-    </form>
-    
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00:00</h2>
+    <div id="wrap">
+        <header id="header-container">
+            <form id="login-form" class="hidden">
+                <input type="text">
+                <button type="submit">log in</button>
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            <a href="login.html">로그인 </a>
+            <a href="">Join Us?</a>
+        </header>
+        <main id="main-container" class="main">
+            <article id="clock-container" class="center">
+                <h2 id="clock">00:00:00</h2>
 
-    <form action="" id="todo-form">
-        <input type="text" name="" id="" placeholder="Write a To Do and Press Enter" required/> 
-    </form>
-    <ul id ="todo-list"></ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
+                <div id="weather">
+                    <span></span>
+                    <span></span>
+                </div>
+            </article>
+            <section id="quote-container" class="center">
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+            <section id="todo-container" class="center">
+                <form action="" id="todo-form">
+                    <input type="text" name="" id="todo-insert" placeholder="Write a To Do and Press Enter" required />
+                </form>
+                <ul id="todo-list"></ul>
+            </section>
+        </main>
+        <footer id="footer-container">
+
+        </footer>
     </div>
-    
-    <script src="js/background.js"></script>
+
+    <!-- <script src="js/background.js"></script> -->
     <script src="js/quotes.js"></script>
     <script src="js/clcok.js"></script>
     <script src="js/gretting.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
+
 </html>
