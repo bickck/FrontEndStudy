@@ -1,0 +1,58 @@
+
+
+#register-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#register-container #register-form-container {
+    display: flex;
+    align-items: center;
+}
+
+#username-container,
+#password-container  {
+    position: relative;
+    width: 400px;
+    padding: 15px;
+    margin: 25px;
+}
+
+#btn-container {
+    width: 450px;
+    height: 50px;
+    padding: 15px;
+    margin: 25px;
+}
+#btn-container button {
+    border-radius: 150px ;
+    width: 450px;
+    height: 30px;
+}
+
+#username-container label,
+#password-container label {
+    position: absolute;
+    bottom: 22px;
+    z-index: -1;
+    color: silver;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+#username-container #username:focus,
+#password-container #userpassword:focus {
+    outline: none;
+}
+
+#username-container #username,
+#password-container #userpassword {
+    font-size: 17px;
+    color: white;
+    height: 25px;
+    width: 450px;
+    background: transparent ;
+    border:none;
+    border-bottom: 1px solid white;
+}

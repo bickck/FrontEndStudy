@@ -1,8 +1,9 @@
-const id = document.querySelector("#login-form #userId");
+const id = document.querySelector("#login-form #username");
+const password =document.querySelector("#login-form #userpassword");
 const loginBtn = document.querySelector("#login-form")
 const url = `http://localhost:8080/account/login`;
 
-function account(event) {
+function login(event) {
     event.preventDefault();
     var result = fetch(url,{
         method :"POST",
@@ -11,11 +12,10 @@ function account(event) {
         },
         body: JSON.stringify({
             username : `${id.value}`,
+            password : `${password.value}`
         }),
     });
-    console.log(result);
-    
 }
 
-loginBtn.addEventListener("submit",account);
+loginBtn.addEventListener("submit",login);
 

@@ -1,0 +1,64 @@
+body {margin: 0; padding: 0; } 
+#wrap{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+}
+
+.content {
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+}
+
+#wrap .content-container {
+    width: 500px;
+    height: 800px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+#wrap .content-container .user-container {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    background: rgb(142, 142, 243);
+    text-align: center;
+}
+#wrap .content-container #find-user{
+    flex-direction: row;
+}
+#form-content  {}
+
+.user-container .login-container {
+    width: 100%;
+    height: 100%;
+    background: rgb(48, 48, 150);
+    text-align: center;
+}
+#username-content {
+    background: white;
+    height: 50px;
+    margin-bottom: 25px;
+}
+#username-content {
+    background: white;
+    height: 50px;
+    margin-bottom: 25px;
+}
+#username-content label {
+    position: relative;
+}
+
+.user-container .find-user{
+    display: inline;
+    flex-direction: row;
+}
+

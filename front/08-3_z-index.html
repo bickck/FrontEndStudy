@@ -1,0 +1,76 @@
+
+<!-- 08_position/08-3_z-index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+<style type="text/css">
+/*  
+	# z-index
+	- position 속성에서 요소의 수직 위치를 지정합니다
+	    숫자가 클수록 위로 올라오고, 작을 수록 아래로 내려갑니다
+*/
+
+div {
+	margin: 0;
+	width: 200px; height: 200px;
+	position: absolute;
+}
+div.box_a {
+	background-color: red;
+	top: 20px;
+	left: 100px;
+	z-index: 1;
+}
+div.box_b {
+	background-color: green;
+	top: 50px;
+	left: 200px;
+	z-index: 2;
+}
+div.box_c {
+	background-color: blue;
+	top: 80px;
+	left: 150px;
+	z-index: -1
+}
+
+</style>
+</head>
+<body>
+	<h1>z-index</h1>
+	<div class="base">
+		<div class="box_a">box_a</div>
+		<div class="box_b">box_b</div>
+		<div class="box_c">box_c</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

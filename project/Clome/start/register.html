@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
 </head>
+
 <body>
-    
+    <div id="wrap">
+        <div id="register-container" class="wrap-container">
+            <div id="register-form-container" class="form-continer">
+                <form id="register-form">
+                    <div id="username-container">
+                        <input type="text" name="username" id="username" autocomplete="off" required>
+                        <label>USERNAME</label>
+                        <div id="username-error-meg"></div>
+                    </div>
+                    <div id="password-container">
+                        <input type="password" name="password" id="userpassword" autocomplete="off" required>     
+                        <label>PASSWORD</label>  
+                        <div id="username-error-meg"></div>
+                    </div>
+                    <div id="btn-container">
+                        <button id="register-btn" type="submit">Register</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/register.js"></script>
+    <script src="js/labelmove.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: white;
+    height: 100vh;
+    background-image : url("/img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+
+#wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}

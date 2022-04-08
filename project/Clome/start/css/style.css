@@ -1,38 +1,17 @@
-@font-face {
-    font-family: 'InfinitySans-RegularA1';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
 
-body {
-    color: white;
-    height: 100vh;
-    background-image : url("/img/1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;   
-}
 
-#wrap {
-    display: flex;
-    height: 100vh;
+#header-container{
+
+}
+#main-container{
+
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
-
-#header-container{}
-#main-container{}
 #footer-container{}
 
 .main {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     align-content: center;
     justify-content: center;

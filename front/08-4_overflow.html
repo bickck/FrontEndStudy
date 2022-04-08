@@ -1,0 +1,90 @@
+
+<!-- 08_posion/08-4_overflow.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<style type="text/css">
+/*  
+	# overflow
+	- 내용이 요소의 크기를 벗어났을 때 어떻게 처리할지를 지정합니다
+	  > visible : 영역을 벗어난 부분을 표시합니다(기본)
+	    hidden  : 영역을 벗어난 부분은 잘라내서 보이지 않게 합니다
+	    scroll  : 영역을 벗어난 부분이 없어도 스크롤을 표시합니다
+	    auto    : 영역을 벗어난 부분이 있을때만 스크롤을 표시합니다
+*/
+
+div {
+	width: 200px; height: 200px;
+	background-color: silver;
+	float: left;
+	margin-right: 10px;
+}
+.visible { overflow: visible;}
+.hidden { overflow: hidden;}
+.scroll { overflow: scroll;}
+.auto { overflow: auto;}
+
+</style>
+</head>
+<body>
+	<h1>overflow</h1>
+	<div class="visible">
+		<h2>visible</h2>
+		<p>내용이 요소의 크기를 벗어났을 때 어떻게 처리할지를 지정합니다
+	  > visible : 영역을 벗어난 부분을 표시합니다(기본)
+	    hidden  : 영역을 벗어난 부분은 잘라내서 보이지 않게 합니다
+	    scroll  : 영역을 벗어난 부분이 없어도 스크롤을 표시합니다
+	    auto    : 영역을 벗어난 부분이 있을때만 스크롤을 표시합니다</p>
+	</div>
+	<div class="hidden">
+		<h2>hidden</h2>
+		<p>내용이 요소의 크기를 벗어났을 때 어떻게 처리할지를 지정합니다
+	  > visible : 영역을 벗어난 부분을 표시합니다(기본)
+	    hidden  : 영역을 벗어난 부분은 잘라내서 보이지 않게 합니다
+	    scroll  : 영역을 벗어난 부분이 없어도 스크롤을 표시합니다
+	    auto    : 영역을 벗어난 부분이 있을때만 스크롤을 표시합니다</p>
+	</div>
+	<div class="scroll">
+		<h2>scroll</h2>
+		<p>내용이 요소의 크기를 벗어났을 때 어떻게 처리할지를 지정합니다
+	  > visible : 영역을 벗어난 부분을 표시합니다(기본)
+	    hidden  : 영역을 벗어난 부분은 잘라내서 보이지 않게 합니다
+	    scroll  : 영역을 벗어난 부분이 없어도 스크롤을 표시합니다
+	    auto    : 영역을 벗어난 부분이 있을때만 스크롤을 표시합니다</p>
+	</div>
+	<div class="auto">
+		<h2>auto</h2>
+		<p>내용이 요소의 크기를 벗어났을 때 어떻게 처리할지를 지정합니다
+	  > visible : 영역을 벗어난 부분을 표시합니다(기본)
+	    hidden  : 영역을 벗어난 부분은 잘라내서 보이지 않게 합니다
+	    scroll  : 영역을 벗어난 부분이 없어도 스크롤을 표시합니다
+	    auto    : 영역을 벗어난 부분이 있을때만 스크롤을 표시합니다</p>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
