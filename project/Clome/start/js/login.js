@@ -1,10 +1,12 @@
-const id = document.querySelector("#login-form #username");
-const password =document.querySelector("#login-form #userpassword");
-const loginBtn = document.querySelector("#login-form")
+const id = document.querySelector("#form-content #username-content input");
+const password =document.querySelector("#form-content #password-content input");
+const loginBtn = document.querySelector("#form-content #btn-content button")
 const url = `http://localhost:8080/account/login`;
 
 function login(event) {
     event.preventDefault();
+    console.log(id);
+    console.log(password);
     var result = fetch(url,{
         method :"POST",
         headers: {
@@ -16,6 +18,6 @@ function login(event) {
         }),
     });
 }
-
+console.log(loginBtn);
 loginBtn.addEventListener("submit",login);
 

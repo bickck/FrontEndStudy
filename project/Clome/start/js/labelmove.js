@@ -4,11 +4,6 @@
 const id_focus = document.querySelector("#username-container input");
 const password_focus = document.querySelector("#password-container input");
 
-function inputListner(){
-
-    console.log("input 리스너!");
-}
-
 function label_path(label){
     const label_path = label.path[1].id;
     let label_id = document.querySelector(`#${label_path} label`);
@@ -24,19 +19,15 @@ function translate(labelId,locate,size){
 function move_label(label,input) {
     let label_id = label_path(label);
     translate(label_id,-20,15);
-    inputListner();
+   // validCheckStart();
 }
 
 function stop(label){
-   
     let label_id = label_path(label);    
-
-    if(label.target.value !== ""){
-        console.log("호출 되었습니다.")
-    }else{
+    if(label.target.value === ""){
         translate(label_id,0,17);
     }
-   
+    //validCheckStop();
 }
 
 
@@ -46,3 +37,4 @@ password_focus.addEventListener("focus", move_label);
 
 id_focus.addEventListener("blur", stop);
 password_focus.addEventListener("blur", stop);
+
