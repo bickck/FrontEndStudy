@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        span {
+            animation: colorchange 3s infinite;
+        }
+        @keyframes colorchange {
+            from {
+                color:red;                
+            }
+            50% {
+                color:green;
+            }
+            to {
+                color:blue;              
+            }
+        }
+    </style>
+    <h1>Quiz animation</h1>
+    <p><span>span</span> 텍스트를 3초 간격으로red,green,blue 색상으로 변경</p>
+    <br>
+
+    <style>
+        h3{
+            animation-name: changeText;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        @keyframes changeText {
+            from {
+                font-size: 500%;
+            }
+            to{
+                font-size: 100%;
+            }
+        }
+    </style>
+
+    <h3>꽝!</h3>
+    <p class="font">꽝 글자가 3초동안 500~ 100%로 작아집니다. </p>
+    
+</body>
+</html>

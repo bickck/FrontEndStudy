@@ -18,7 +18,7 @@ function translate(labelId,locate,size){
 
 function move_label(label,input) {
     let label_id = label_path(label);
-    translate(label_id,-20,15);
+    translate(label_id,-20,14);
    // validCheckStart();
 }
 

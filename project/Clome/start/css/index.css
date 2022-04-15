@@ -1,0 +1,19 @@
+
+
+
+#header-container{
+    height: 5%;
+    position: relative;
+}
+#main-container{
+    height: 100%;
+    position: relative;
+}
+
+.center {
+   
+}
+
+.hidden {
+    display: none;
+}

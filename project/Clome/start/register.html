@@ -14,17 +14,20 @@
     <div id="wrap">
         <div id="register-container" class="wrap-container">
             <div id="register-form-container" class="form-continer">
-                <form id="register-form">
+                <form id="register-form" action="http://localhost:8080/account/register" method="POST">
                     <div id="username-container">
                         <input type="text" name="username" id="username" autocomplete="off" required>
                         <label>USERNAME</label>
-                        <span id="username-error-meg"></span>
+                        <span id="username-error-meg" class="hidden">유효하지 않는 계정입니다.</span>
                     </div>
-                    <div id="password-container">
-                        <input type="password" name="password" id="userpassword" autocomplete="off" required>     
-                        <label>PASSWORD</label>  
-                        <span id="username-error-meg"></span>
+                    <div>
+                        <div id="password-container">
+                            <input type="password" name="password" id="userpassword" autocomplete="off" required>     
+                            <label>PASSWORD</label>
+                            <span id="password-error-meg" class="hidden">유효하지 않는 계정입니다.</span>
+                        </div>
                     </div>
+                   
                     <div id="btn-container">
                         <button type="submit">Register</button>
                     </div>

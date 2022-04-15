@@ -29,10 +29,15 @@
     width: 450px;
     height: 30px;
 }
+.hidden{
+    display: none;
+    font-size: 14px;
+}
 
 #username-container label,
 #password-container label {
     position: absolute;
+    top: 15px;
     bottom: 22px;
     z-index: -1;
     color: silver;

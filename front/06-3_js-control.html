@@ -1,0 +1,77 @@
+
+<!-- 06_ use/06-3_js-control.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js-control</title>
+</head>
+<body>
+	<table border="1">
+		<script>
+			document.write("<caption> 과목 </caption>");
+			document.write("<tr>");
+			document.write("<th> 번호  </th>");
+			document.write("<th> 과목명 </th>");
+			document.write("</tr>");
+			
+			var sub_1 = "1. Java";
+			var sub_2 = "2. HTML";
+			var sub_3 = "3. JavaScript";
+			
+			var sub_list = sub_1 + "\n" + sub_2 + "\n" + sub_3;
+			var select = prompt("과목 번호를 입력하세요\n" + sub_list);
+			
+			document.write("선택 : ", select, "<br>");
+			document.write("<br>");
+			
+			var select_sub;
+			if(select == "1")
+				select_sub = sub_1;
+			else if(select == "2")
+				select_sub = sub_2;
+			else if(select == "3")
+				select_sub = sub_3;
+			else 
+				alert("없는 과목입니다...");
+			
+			document.write("<tr>");
+			document.write("<td>", select , "</td><td>", select_sub, "</td>");
+			document.write("</tr>");
+			
+		</script>
+	</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

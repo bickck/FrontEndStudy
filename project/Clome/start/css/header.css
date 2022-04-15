@@ -1,0 +1,28 @@
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#header-container #login{
+    margin-right: 30px;
+}
+
+#header-container #lists{
+    margin-left: 30px;
+}
+.account-container .user-page {
+    display: none;
+}
+#header-container .header-content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#header-container .material-icons-outlined:hover {
+    color: red;
+}
+
+#header-container .material-icons-outlined {
+    color:white;
+}

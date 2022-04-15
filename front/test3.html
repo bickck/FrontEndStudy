@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 350px;
+            height: 100px;
+        }
+    </style>
+    <style>
+        table {
+            width: 900px;
+            height: 200px;
+        }
+
+        #title {
+            background-color: #4169e1;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .subject {
+            width: 500px;
+        }
+
+        #button-container {
+            width: 70px;
+        }
+
+        #content {
+            background-color: #f5f5c7;
+        }
+
+        #user-date {
+            width: 100px;
+        }
+
+        #count {
+            width: 50px;
+        }
+
+        #num {
+            width: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1</h1>
+
+    <fieldset>
+        <legend>회원 정보</legend>
+        <label for="">이 름</label>
+        <input type="text" name="" id="" placeholder="공백없이 입력하세요" required>
+        <br>
+        <label for="">이메일</label>
+        <input type="email" name="" id="" placeholder="abc@test.com" required>
+        <br>
+        <label for="">전화번호</label>
+        <input type="text" name="" id="" placeholder="010-0000-0000">
+    </fieldset>
+    <br>
+    <button type="submit">완료</button>
+
+    <br>
+    <h1>2</h1>
+    <br>
+
+    <table border="1">
+        <tbody>
+            <tr id="title">
+                <td id="num">번호</td>
+                <td colspan="2" class="subject">제목</td>
+                <td id="user-date">작성자</td>
+                <td id="user-date">작성일</td>
+                <td id="count">조회수</td>
+            </tr>
+            <tr id="content">
+                <td>5</td>
+                <td id="sub-title">제목 5</td>
+                <td id="button-container"><button>바로가기</button></td>
+                <td>user01</td>
+                <td>2000-01-01</td>
+                <td>10</td>
+            </tr>
+            <tr id="content">
+                <td>4</td>
+                <td id="sub-title">제목 4</td>
+                <td><button>바로가기</button></td>
+                <td>user02</td>
+                <td>2000-01-01</td>
+                <td>8</td>
+            </tr>
+            <tr id="content">
+                <td>3</td>
+                <td>제목 3</td>
+                <td><button>바로가기</button></td>
+                <td>user03</td>
+                <td>2000-01-01</td>
+                <td>6</td>
+            </tr>
+            <tr id="content">
+                <td>2</td>
+                <td>제목 2</td>
+                <td><button>바로가기</button></td>
+                <td>user04</td>
+                <td>2000-01-01</td>
+                <td>4</td>
+            </tr>
+            <tr id="content">
+                <td>1</td>
+                <td>제목 1</td>
+                <td><button>바로가기</button></td>
+                <td>user05</td>
+                <td>2000-01-01</td>
+                <td>2</td>
+            </tr>
+            <tr id="title">
+                <td id="title" colspan="4">목록수</td>
+                <td id="title" colspan="2">5개</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

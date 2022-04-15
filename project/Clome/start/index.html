@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum App</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -18,39 +22,57 @@
 
     <div id="wrap">
         <header id="header-container">
-            <form id="login-form" class="hidden">
+            <!-- <form id="login-form" class="hidden">
                 <input type="text">
                 <button type="submit">log in</button>
             </form>
-            <h1 id="greeting" class="hidden"></h1>
-            <a href="login.html">로그인 </a>
-            <a href="">Join Us?</a>
+            <h1 id="greeting" class="hidden"></h1> -->
+            <a href="" id="lists">
+                <span class="material-icons-outlined">
+                    reorder
+                </span>
+            </a>
+            <!-- <div id="project">My-ToDo-List</div> -->
+            <div class="account-container">
+                <a href="login.html" id="login" class="header-content">
+                    <span class="material-icons-outlined">
+                        login
+                    </span>
+                </a>
+                <a href="http://" class="user-page">
+                    <span class="material-icons-outlined">
+                        account_circle
+                    </span>
+                </a>
+            </div>
         </header>
-        <main id="main-container" class="main">
-            <article id="clock-container" class="center">
-                <h2 id="clock">00:00:00</h2>
-
-                <div id="weather">
-                    <span></span>
-                    <span></span>
+        <main id="main-container">
+            <article class="content-continaer">
+                <div id="clock-container">
+                    <h2 id="clock">00:00:00</h2>
                 </div>
+                <div id="weather-container">
+                    <div id="weather">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
             </article>
-            <section id="quote-container" class="center">
+            <section id="quote-container" class="content-continaer">
                 <div id="quote">
                     <span></span>
                     <span></span>
                 </div>
+
             </section>
-            <section id="todo-container" class="center">
+            <section id="todo-container" class="content-continaer">
                 <form action="" id="todo-form">
                     <input type="text" name="" id="todo-insert" placeholder="Write a To Do and Press Enter" required />
                 </form>
                 <ul id="todo-list"></ul>
             </section>
         </main>
-        <footer id="footer-container">
-
-        </footer>
     </div>
 
     <!-- <script src="js/background.js"></script> -->

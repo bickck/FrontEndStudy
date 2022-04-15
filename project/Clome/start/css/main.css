@@ -1,39 +1,51 @@
-#clock-container {
-    
-}
 
+/* clock */
 #clock-container #clock {
-    font-size: 100px;
-    margin-bottom: 20px;
-}
-
-#clock-container #weather {
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-#quote-container {
-    height: 150px;
-    width: 500px;
-}
-
-#quote-container #quote {
-    margin-top: 20px;
+    
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    align-items: flex-end;
     justify-content: center;
 }
-
-#todo-container{}
-
-#todo-container #todo-form {
-   
+#clock-container #clock {
+    font-size: 100px;
+    height: 600px;
 }
+/* weather */
+.content-continaer #weather {
+    font-size: 20px;
+    height: 100px;
+    text-align: center;
+}
+
+/* quote */
+#quote-container #quote {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#quote-container #quote span{
+    height: 40px;
+    width: 600px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* todo-list */
 #todo-form input:focus {
     outline: none; 
     border-bottom: 1px solid red;
     transition: all ease 1s;
+}
+#main-container #todo-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #todo-form input{
@@ -45,8 +57,5 @@
     text-align: center;
     font-size: 20px;
     color: white;
-}
 
-#todo-form input::placeholder{
-    
 }

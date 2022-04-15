@@ -17,7 +17,7 @@ function login(event) {
             password : `${password.value}`
         }),
     });
+    console.log(result);
 }
-console.log(loginBtn);
-loginBtn.addEventListener("submit",login);
-
+//loginBtn.addEventListener("click",login);
+//login_test();

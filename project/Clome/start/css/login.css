@@ -1,64 +1,77 @@
-body {margin: 0; padding: 0; } 
-#wrap{
-    height: 100vh;
-    width: 100vw;
-    background: black;
-}
 
-.content {
 
+#login-container {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background:white;
+    
 }
 
-#wrap .content-container {
-    width: 500px;
-    height: 800px;
-    background: red;
+#login-container .form-continer {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-items: center;
-    
     
 }
-#wrap .content-container .user-container {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    background: rgb(142, 142, 243);
-    text-align: center;
-}
-#wrap .content-container #find-user{
-    flex-direction: row;
-}
-#form-content  {}
 
-.user-container .login-container {
-    width: 100%;
-    height: 100%;
-    background: rgb(48, 48, 150);
-    text-align: center;
-}
-#username-content {
-    background: white;
-    height: 50px;
-    margin-bottom: 25px;
-}
-#username-content {
-    background: white;
-    height: 50px;
-    margin-bottom: 25px;
-}
-#username-content label {
+#username-container,
+#password-container  {
     position: relative;
+    width: 400px;
+    padding: 15px;
+    margin: 25px;
 }
 
-.user-container .find-user{
-    display: inline;
-    flex-direction: row;
+#btn-content {
+    width: 450px;
+    height: 50px;
+    padding: 15px;
+    margin: 25px;
+}
+#btn-content button {
+    width: 450px;
+    height: 30px;
 }
 
+#username-container label,
+#password-container label {
+    position: absolute;
+    bottom: 22px;
+    z-index: -1;
+    color: silver;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+#username-container #username:focus,
+#password-container #userpassword:focus {
+    outline: none;
+}
+
+#username-container #username,
+#password-container #userpassword {
+    font-size: 17px;
+    color: white;
+    height: 25px;
+    width: 450px;
+    background: transparent ;
+    border:none;
+    border-bottom: 1px solid white;
+}
+#login-form-container #user-util-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+#login-form-container #user-util-container .find-user{
+    /* display: inline-flex;     */
+}
+
+#user-util-container .find-user a{
+    text-decoration: none;
+    color: white;
+}
+form {
+    
+}
