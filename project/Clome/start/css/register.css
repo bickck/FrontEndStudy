@@ -29,9 +29,14 @@
     width: 450px;
     height: 30px;
 }
-.hidden{
+.user-hidden{
     display: none;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.password-hidden {
+    display: none;
+    font-size: 12px;
 }
 
 #username-container label,

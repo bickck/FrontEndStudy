@@ -2,50 +2,47 @@ const valid_id = document.querySelector("#username-container input");
 const valid_password = document.querySelector("#password-container input");
 const btn = document.querySelector("#btn-container button");
 
+const user_err_msg = document.querySelector("#username-error-meg");
+const pw_err_msg = document.querySelector("#password-error-msg");
+
 var isValidId = false;
 var isValidPassword = false;
 var stopInterval;
 
-function validUsername(id) {
-    console.log("isValidUsername(id)")
-    if(id === ""){
-        return false;
-    }
-    return true;
+function validUsername() {
+    fetch("http://localhost:8080/validation/username",{
+        method : "POST",
+        headers : {
+            "Content-Type" : "application/x-www-form-urlencoded"
+        },
+        body : `username=${valid_id.value}`
+    })
+    .then((response)=> response.text())
+    .then((data)=>{
+        if(data === "unvalid"){
+            user_err_msg.classList.remove("user-hidden");
+        }else{
+            user_err_msg.innerText = "사용 가능한 아이디입니다.";
+            user_err_msg.classList.remove("user-hidden");
+        }
+    });
 }
 
 function validPassword(password) {
-    console.log("isValidPassword(password)")
-    if(id === ""){
-        return false;
-    }
-    return true;
+    fetch("http://localhost:8080/validation/password",{
+        method : "POST",
+        headers : {
+            "Content-Type" : "application/x-www-form-urlencoded"
+        },
+        body : `password=${valid_password.value}`
+    })
+    .then((response)=> response.text())
+    .then((data)=>{
+        if(data === "unvalid"){
+            user_err_msg.classList.remove("password-hidden");
+        }
+    });
 }
 
-function isInputValidCheck(input){
-    
-    console.log("데이터가 들어오는지 확인중....")
-}
-
-function validCheckStart() {
-    stopInterval = setInterval(isInputValidCheck,1000);
-}
-
-function validCheckStop() {
-    clearInterval(stopInterval);
-}
-
-function btnListener() {
-    console.log("버튼 활성화~")
-    if(valid_id !== ""){
-        isValidId = true;
-    }
-    if(valid_password !== ""){
-        isValidPassword = true;
-    }
-    if(isValidId === true && isValidPassword === true){
-        btn.disabled = true;
-    }
-}
-
-//setInterval(btnListener,1000);
+valid_id.addEventListener("blur",validUsername);
+valid_id.addEventListener("blur",validPassword);

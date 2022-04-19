@@ -18,13 +18,13 @@
                     <div id="username-container">
                         <input type="text" name="username" id="username" autocomplete="off" required>
                         <label>USERNAME</label>
-                        <span id="username-error-meg" class="hidden">유효하지 않는 계정입니다.</span>
+                        <span id="username-error-meg" class="user-hidden">중복된 계정입니다.</span>
                     </div>
                     <div>
                         <div id="password-container">
                             <input type="password" name="password" id="userpassword" autocomplete="off" required>     
                             <label>PASSWORD</label>
-                            <span id="password-error-meg" class="hidden">유효하지 않는 계정입니다.</span>
+                            <span id="password-error-meg" class="password-hidden">특수문자, 대문자, 소문자, 숫자로 이루어진 수를 입력해주세요</span>
                         </div>
                     </div>
                    
@@ -36,7 +36,6 @@
         </div>
     </div>
     <script src="js/valid.js"></script>
-    <script src="js/register.js"></script>
     <script src="js/labelmove.js"></script>
 </body>
 

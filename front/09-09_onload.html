@@ -1,0 +1,63 @@
+
+<!-- 09_event/09-09_onload.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>onload</title>
+</head>
+<body onload="changeImage()">
+	<h1>이미지 크기 출력</h1>
+	<form>
+		<select id="fruits" onchange="changeImage()">
+			<option value="event_image/apple.png"> 사과
+			<option value="event_image/banana.png"> 바나나
+			<option value="event_image/mango.png"> 망고
+		</select>
+		<span id="size">이미지 크기</span>
+	</form>
+	<p><img id="fruit_img" src="event_image/apple.png"></p>
+	<script>
+		function changeImage(){
+			let fruits = document.getElementById("fruits");
+			let img = document.getElementById("fruit_img");
+			img.onload = function(){
+				// 이미지 크기 
+				let size = document.getElementById("size");
+				size.innerHTML = img.width + ' x ' + img.height;
+			}
+			let index = fruits.selectedIndex; // 선택된 옵션 index
+			img.src = fruits.options[index].value; // <option>의 value 속성
+			// 이미지 로딩 시작, 완료 후 onload 리스너 호출
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

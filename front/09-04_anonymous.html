@@ -1,0 +1,44 @@
+
+<!-- 09_event/09-04_anonymous.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>익명 함수 리스너</title>
+<script>
+	let p;
+	function init(){ // 문서가 완전히 로드되면 호출
+		p = document.getElementById('p');
+		p.onmouseover = function(){
+			p.style.backgroundColor="orange";
+		}
+		p.addEventListener('mouseout', 
+			function(){
+				p.style.backgroundColor="white";
+			}
+		);   // 이벤트 리스너 등록
+	}
+</script>
+</head>
+<body onload="init()">
+	<h1>익명 함수를 이용한 리스너</h1>
+	<p id="p">마우스를 올려 보세요...</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

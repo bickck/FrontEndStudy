@@ -1,0 +1,56 @@
+
+<!-- 09_event/09-03_addEventListener.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>addEventListener() 이용</title>
+<script>
+	let p;
+	function init(){ // 문서가 완전히 로드되면 호출
+		p = document.getElementById('p');
+		p.addEventListener('mouseover', over); // 이벤트 리스너 등록
+		p.addEventListener('mouseout', out);   // 이벤트 리스너 등록
+	}
+	function over(){
+		p.style.backgroundColor="orange";
+	}
+	function out(){
+		p.style.backgroundColor="white";
+	}
+</script>
+</head>
+<body onload="init()">
+	<h1>addEventListener() 를 이용한 리스너 등록</h1>
+	<p id="p">마우스를 올려 보세요...</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

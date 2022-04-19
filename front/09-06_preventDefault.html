@@ -1,0 +1,62 @@
+
+<!-- 09_event/09-06_preventDefault.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>preventDefault</title>
+<script>
+	/*
+		# 이벤트 디폴트  행동
+		- 특정 이벤트에 대한 HTML 태그의 기본 행동입니다
+		
+		# 이벤트의 디폴트 행동을 막는 방법
+		- 이벤트 리스너에서 false 리턴
+		- 이벤트 객체의 preventDefault() 메서드 호출
+	*/
+</script>
+</head>
+<body>
+	<h1>이벤트 디폴트 행동 취소</h1>
+	<a href="http://www.naver.com" onclick="return query()">NAVER</a>
+	<br><br>
+	<form>
+		<input type="checkbox"> 스낵<br>
+		<input type="checkbox" onclick="noAction(event)"> 과일<br>
+	</form>
+	<script>
+		function noAction(e){
+			e.preventDefault(); // 이벤트의 디폴트 행동 강제 취소
+		}	
+	
+		function query(){
+			let res = confirm("네이버로 이동할까요?"); // confirm 의 반환값은 true or false
+			return res;
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
