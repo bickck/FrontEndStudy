@@ -10,7 +10,7 @@ var isValidPassword = false;
 var stopInterval;
 
 function validUsername() {
-    fetch("http://localhost:8080/validation/username",{
+    fetch("http://localhost:8080/valid/username",{
         method : "POST",
         headers : {
             "Content-Type" : "application/x-www-form-urlencoded"
@@ -29,7 +29,7 @@ function validUsername() {
 }
 
 function validPassword(password) {
-    fetch("http://localhost:8080/validation/password",{
+    fetch("http://localhost:8080/valid/password",{
         method : "POST",
         headers : {
             "Content-Type" : "application/x-www-form-urlencoded"

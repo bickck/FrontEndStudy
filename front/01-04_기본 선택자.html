@@ -1,0 +1,78 @@
+
+<!-- 01_basic/01-04_기본 선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>기본 선택자</title>
+<script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="logo">로고</div>
+		<div class="util">회원 가입</div>
+		<nav id="gnb">
+			<ul>
+				<li>메뉴 1
+					<ul>
+						<li>메뉴 1-1</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div id="visual">
+			<p>visual</p>
+		</div>
+		<div class="content">
+			<div class="left">왼쪽</div>
+			<div class="right">
+				<div class="util">오른쪽</div>
+			</div>
+		</div>
+		<div id="banner">banner</div>
+		<footer id="footer">footer</footer>
+	</header>
+	<!-- script -->
+	<script>
+		$(document).ready(function(){
+			$('p').css("border", "4px solid red"); // 태그 선택자 : p 요소 선택	
+			$('#gnb').css("border", "4px solid orange"); // id 선택자 : #gnb 선택
+			$('.logo').css("border", "4px solid yellow"); // class 선택자 : .logo 선택
+			$('#gnb > ul > li').css("border", "4px solid green"); // 자식 선택자
+			$('#gnb ul').css("border", "4px solid blue"); // 하위 선택자
+			$('#visual + .content').css("border", "4px solid navy"); // 인접 선택자
+			$('#visual ~ #footer').css("border", "4px solid skyblue");
+			$('div.util').css("border", "4px solid pink"); // 종속 선택자
+			$('.left, .right, #banner').css("border", "4px solid olive"); // 그룹 선택자
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

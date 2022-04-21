@@ -26,3 +26,7 @@
 #header-container .material-icons-outlined {
     color:white;
 }
+
+.account-container a {
+    text-align: none;
+}

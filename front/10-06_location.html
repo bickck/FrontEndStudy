@@ -1,0 +1,55 @@
+
+<!-- 10_BOM/10-06_location.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>location</title>
+<script>
+/*
+	# location 객체
+	- 윈도우에 로드된 웹 페이지에 URL 정보를 나타내는 객체입니다
+ */
+</script>
+</head>
+<body>
+	<h1>사이트 이동</h1>
+	<span>사이트 선택 : </span>
+	<select id="site">
+		<option value="http://www.naver.com">naver</option>
+		<option value="http://www.google.com">google</option>
+		<option value="http://www.daum.net">daum</option>
+	</select>
+	<p><button onclick="load()">사이트 이동</button></p>
+	<!-- script -->
+	<script>
+		function load(){
+			let sel = document.getElementById('site');
+			window.location=sel.options[sel.selectedIndex].value;
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

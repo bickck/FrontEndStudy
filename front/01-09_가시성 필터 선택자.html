@@ -1,0 +1,63 @@
+
+<!-- 01_basic/01-09_가시성 필터 선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가시성 필터 선택자</title>
+<style>
+	#content {
+		display: none;
+	}
+</style>
+<script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<div id="content">내용 1</div>
+	<div>내용 2</div>
+	<!-- script -->
+	<script>
+		/*
+			# 가시성 필터 선택자
+			- :hidden  -> hidden 요소 선택
+			  :visible -> visible 요소 선택 
+		*/
+		$(document).ready(function(){
+			console.log($("div:hidden").text());
+			$("div:visible").css("background", "gold");
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -50,11 +50,9 @@ const quotes =
         },
     ];
 
-const quote_container = document.querySelector("#quote-container div:first-child");
+const quote_container = document.querySelector("#quote div:first-child");
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
-
-
 
 function requestQuote() {
     let request;
@@ -66,27 +64,21 @@ function requestQuote() {
             resolve(data);
         });
     })
-    // let result = fetch(url, {
-    //     method: 'GET',
-    // }).then(response => response.json()).then(data => {
-    //     request = data;
-    // });
-    // return request;
 }
 
 function changeQuote(data) {
-    // const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
     quote.innerText = data.quote;
     author.innerText = `-${data.author}-`;
 }
-const result = requestQuote();
+
+
 function change() {
+    const result = requestQuote();
     result.then((value) => {
-        console.log(value);
         const data = value[Math.floor(Math.random() * value.length)];
         changeQuote(data)
     })
 }
 
-//setInterval(change, 5000);
+setInterval(change, 5000);
 //setInterval(changeQuote,5000);

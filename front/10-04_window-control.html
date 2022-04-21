@@ -1,0 +1,81 @@
+
+<!-- 10_BOM/10-04_window-control.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>위치, 크기 조절</title>
+</head>
+<body>
+	<h1>윈도우 위치, 크기 조절</h1>
+	<button onclick="openWindow()">window open</button>
+	<br><br>
+	<button onclick="leftMove()">left</button>
+	<button onclick="rightMove()">right</button>
+	<button onclick="upMove()">up</button>
+	<button onclick="downMove()">down</button>
+	<button onclick="plusMove()">+</button>
+	<button onclick="minusMove()">-</button>
+	
+	<!-- script -->
+	<script>
+		let newWin = null;
+		function openWindow(){
+			newWin = window.open('', 'windowTest', 'width=500, height=500');
+		}
+		function leftMove(){
+			newWin.moveBy(-10, 0);
+			newWin.focus();
+		}
+		function rightMove(){
+			newWin.moveBy(10, 0);
+			newWin.focus();
+		}
+		function upMove(){
+			newWin.moveBy(0, -10);
+			newWin.focus();
+		}
+		function downMove(){
+			newWin.moveBy(0, 10);
+			newWin.focus();
+		}
+		function plusMove(){
+			newWin.resizeBy(10, 10);
+			newWin.focus();
+		}
+		function minusMove(){
+			newWin.resizeBy(-10, -10);
+			newWin.focus();
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

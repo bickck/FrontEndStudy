@@ -1,0 +1,22 @@
+header {
+    height: 5%;
+}
+li, ul{
+    display: inline;
+    list-style: none;
+    background-color: black;
+}
+
+main {
+    height: 100vh;
+}
+section {
+    height: 100vh;
+}
+
+#content-wrap {
+    background-color: white;
+    position: relative;
+    height: 80vh;
+    opacity: 0.5;
+}

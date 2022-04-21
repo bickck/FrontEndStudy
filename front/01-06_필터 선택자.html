@@ -1,0 +1,112 @@
+
+<!-- 01_basic/01-06_필터 선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>필터 선택자</title>
+<style>
+	table { 
+		border-collapse: collapse;
+		width: 100%;
+	}
+	td {
+		border: 1px solid #333;
+	}
+	li {
+		color: white;
+		margin: 5px;
+	}
+</style>
+<script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<h1>필터 선택자</h1>
+	<h2>제목 2</h2>
+	<table>
+		<caption>필터 선택자</caption>
+		<colgroup>
+			<col><col><col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<td> 1 </td><td> 2 </td><td> 3 </td>
+			</tr>
+			<tr>
+				<td> 4 </td><td> 5 </td><td> 6 </td>
+			</tr>
+			<tr>
+				<td> 7 </td><td> 8 </td><td> 9 </td>
+			</tr>
+			<tr>
+				<td> 11 </td><td> 12 </td><td> 13 </td>
+			</tr>
+		</tbody>
+	</table>
+	<ul>
+		<li class="bg">내용 1</li>
+		<li class="bg">내용 2</li>
+		<li class="bg">내용 3</li>
+		<li>내용 4</li>
+	</ul>
+	<!-- script -->
+	<script>
+		/*
+			# 필터 선택자
+			- ':' 기호가 붙은 선택자 입니다
+		*/
+		$(document).ready(function(){
+			$("tr:even").css("background", "red");  // tr 요소중 짝수행만 선택
+			$("tr:odd").css("background", "orange"); // tr 요소중 홀수행만 선택
+			$("td:first").css("background", "yellow"); // 첫번째 td 요소 선택
+			$("td:last").css("background", "green"); // 마지막 td 요소 선택
+			$(":header").css("background", "blue"); // 헤딩(h1 ~ h6) 요소 선택
+			$("li:eq(0)").css("background", "navy"); // index 가 0 인 li 요소 선택
+			$("li:gt(0)").css("background", "mediumpurple"); // index 가 0 보다 큰 li 요소 선택
+			$("li:lt(3)").css("border", "4px solid purple"); // index 가 3 보다 작은 li 요소 선택
+			$(":root").css("background", "lightgray"); // index 가 0 보다 큰 li 요소 선택
+			 
+			(function upDown(){
+				$("h2").slideToggle(1000, upDown);
+			})();
+			$(":animated").css("border", "4px solid yellow"); // 움직이는 요소를 선택
+		});
+	
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

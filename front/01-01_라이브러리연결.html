@@ -1,0 +1,73 @@
+
+<!-- 01_basic/01-01_라이브러리연결.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>라이브러리 연결</title>
+<!--  
+	# jQuery
+	- 오픈 소스 기반의 자바스크립트 라이브러리 입니다
+	- jQuery 를 사용하면 짧고 단순한 코드로 웹 페이지에 다양한 효과를 줄 수 있습니다
+	
+	# 다운로드 방식
+	- https://jquery.com/download
+	  1. Download the compressed, production jQuery 3.x.x 클릭
+	  2. 웹페이지에 있는 라이브러리 코드 전체를 복사해서 에디터에 붙여넣기
+	  3. 'jquery-버전.min.js' 로 저장 
+-->
+	<script src="../jquery-3.6.0.min.js"></script> <!-- jquery 파일 연결 -->
+	<script>
+		/*
+			# 기본 형식
+			- $(document).ready() 시작
+			  > ready() 는 JS 의 load 이벤트와 유사한 기능입니다
+			    jQuery 를 사용하는 모든 웹 페이지에서는 $(document).ready() 시작문으로 시작합니다
+		*/
+ 		$(document).ready(function(){
+			console.log('jQuery 테스트');
+			document.write("JS 코드 입니다..");
+		}); 
+			  
+		/*
+		$(function(){
+		    console.log('jQuery 테스트');
+			document.write("이 방식도 됩니다..");
+		});
+		*/
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
