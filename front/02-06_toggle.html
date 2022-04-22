@@ -1,0 +1,133 @@
+
+<!-- 02_method/02-06_toggle.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>toggleClass</title>
+<style>
+	* { margin: 0; padding: 0; }
+	li { 
+		list-style: none;
+	}
+	a {
+		font-family: "굴림", sans-serif;
+		color: white;
+		font-size: 0.9em;
+		text-decoration: none;
+	}
+	#t_menu {
+		position: absolute;
+		width: 50%; height: 100%;
+		background-color: black;
+	}
+	#t_menu a {
+		display: block;
+		padding: 20px;
+		border-top: 1px solid dimgray;
+		border-bottom: 1px solid dimgray;
+	}
+	#t_menu a.m {
+		background-color: #111;
+		font-weight: bold;
+	}
+	#t_menu a.m.on{
+		color: red;
+	}
+	#t_menu ul a {
+		background-color: gray;
+		text-indent: 20px;
+	}
+	#t_menu li ul {
+		display: none;
+	}
+	#t_menu li ul.on{
+		display: block;
+	}
+</style>
+<!-- script -->
+<script src="../jquery-3.6.0.min.js"></script>
+<script>
+	/*
+		# togleClass()
+		- 요소에 class 속성이 없으면 addClass() 가 적용되고, class 속성이 있으면 removeClass() 가 적용됩니다
+	*/
+	$(document).ready(function() {
+		$("#t_menu a.m").click(function(){
+			$(this).next().addBack().toggleClass("on").find(".m, ul").removeClass("on").end().parent().siblings().find(".m, ul").removeClass("on");
+			return false;
+		});	
+	});
+</script>
+</head>
+<body>
+	<ul id="t_menu"> <!-- $(this) -->
+		<li><a href="" class="m">메뉴 1</a> <!-- $(this).next() => 하위 ul -->
+			<ul> <!-- $(this).next().parent() => 상위 li -->
+				<li><a href="" class="m">메뉴 1-1</a> <!-- $(this).next().find(".m, ul") -->
+					<ul>
+						<li><a href="">메뉴 1-1-1</a></li>
+						<li><a href="">메뉴 1-1-2</a></li>
+					</ul>
+				</li>
+				<li><a href="" class="m">메뉴 1-2</a>
+					<ul>
+						<li><a href="">메뉴 1-2-1</a></li>
+						<li><a href="">메뉴 1-2-2</a></li>
+					</ul>
+				</li>
+				<li><a href="" class="m">메뉴 1-3</a>
+					<ul>
+						<li><a href="">메뉴 1-3-1</a></li>
+						<li><a href="">메뉴 1-3-2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="" class="m">메뉴 2</a>
+			<ul>
+				<li><a href="">메뉴 2-1</a></li>
+				<li><a href="">메뉴 2-2</a></li>
+				<li><a href="">메뉴 2-3</a></li>
+			</ul>
+		</li>
+		<li><a href="" class="m">메뉴 3</a>
+			<ul>
+				<li><a href="">메뉴 3-1</a></li>
+				<li><a href="">메뉴 3-2</a></li>
+				<li><a href="">메뉴 3-3</a></li>
+			</ul>
+		</li>
+	</ul>
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

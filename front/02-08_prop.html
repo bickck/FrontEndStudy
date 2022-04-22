@@ -1,0 +1,67 @@
+
+<!-- 02_method/02-08_prop.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>prop 메서드</title>
+<script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<input type="checkbox" id="html"><label for="html">html</label>
+	<input type="checkbox" id="css"><label for="css">css</label>
+	<!-- script -->
+	<script>
+		/*
+			# prop() 메서드
+			- 자바스크립트 property 에 관련된 메서드 입니다.
+			   요소의 속성을 true, false 로 제어합니다
+		*/
+		$(document).ready(function() {
+			console.log($("input:checkbox").eq(0).attr("checked"));
+			console.log($("input:checkbox").eq(1).prop("checked"));
+			
+			$("input:checkbox").eq(0).attr("checked", "checked");
+			$("input:checkbox").eq(1).prop("checked", true);
+			
+			console.log($("input:checkbox").eq(0).attr("checked"));
+			console.log($("input:checkbox").eq(1).prop("checked"));
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

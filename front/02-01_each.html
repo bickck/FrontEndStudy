@@ -1,0 +1,78 @@
+
+<!-- 02_method/02-01_each.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>each 메서드</title>
+<script src="../jquery-3.6.0.min.js"></script>
+<script>
+	/*
+		# .each() 메서드
+		- $.each( 배열명 or 객체명, function(index, value){
+			
+		  }); 
+        - $(selector).each(function(index, value){
+			
+		  }); 
+	*/
+	$(document).ready(function(){
+		let city = ["서울", "부산", "광주", "제주도"];
+		$.each(city, function(index, value){
+			console.log(index + " - " + value);
+		}); // each end()
+		
+		var subjectInfo = {
+				subejct : "jQuery",
+				grade : 1,
+				day: 20
+		};
+		$.each(subjectInfo, function(key, value){
+			console.log(key + " - " + value);
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>each 메서드</h1>
+	<div class="c1">내용 1</div>
+	<div class="c2">내용 2</div>
+	<div class="c3">내용 3</div>
+	<!-- script -->
+	<script>
+		$(document).ready(function(){
+			$("div").each(function(index, element){
+				console.log(index);  // li 요소 index
+				console.log(element); // li 요소
+				console.log("class : " + $(this).attr("class")); // li 요소의 class
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

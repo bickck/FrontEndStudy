@@ -1,0 +1,71 @@
+
+<!-- 02_method/02-09_css.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css 메서드</title>
+<style>
+	* { margin: 0; padding: 0; }
+	div:nth-child(1){
+		background-color: red;
+	}
+	div:nth-child(2){
+		background-color: green;
+	}
+	div:nth-child(3){
+		background-color: blue;
+	}
+</style>
+<script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<div>내용 1</div>
+	<div>내용 2</div>
+	<div>내용 3</div>
+	<!-- script -->
+	<script>
+		$(document).ready(function() {
+			$("div").eq(0).css({ padding : 10, "text-align" : "center"});	
+			
+ 			$("div").css("width", function(index){
+				return index * 100 + 100;
+			}); 
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
