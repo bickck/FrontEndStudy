@@ -1,0 +1,61 @@
+
+<!-- 08_DOM/08-2_getElementById.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>getElementById</title>
+<style>
+p {
+	background-color: orange;
+	color: blue;
+}
+span {
+	color: red;
+}
+</style>
+</head>
+<body>
+	<h1 id="title">getElementById</h1>
+	<p id="firstP" onclick="this.style.color='green'"><span>첫번째 문장</span> 입니다</p>
+	<script>
+		var title = document.getElementById("title");
+		document.write("<p>title : " + title + "</p>");
+		
+		var p = document.getElementById("firstP");
+		let text = "p.id : " + p.id + "\n";
+		text += "p.tagName : " + p.tagName + "\n";
+		text += "p.style.color : " + p.style.color + "\n";
+		text += "p.onclick : " + p.onclick + "\n";
+		text += "p.childElementCount : " + p.childElementCount + "\n";
+		alert(text);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

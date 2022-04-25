@@ -1,0 +1,85 @@
+
+<!-- 08_DOM/08-6_select-relative.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상대 위치 선택</title>
+<style>
+/*
+	# 상대 위치 선택
+	- 노드 간의 관계를 이용하여 접근하는 방법입니다
+	  > parentNode : 부모 노드
+	    childNodes : 자식 노드 리스트
+	    firstChild : 첫번째 자식 노드
+	    lastChild  : 마지막 자식 노드
+	    nextSibling     : 다음 형제 노드
+	    previousSibling : 이전 형제 노드
+	    
+	# node 정보
+	- 노드에 대한 정보를 확인하는 속성이 있습니다
+	  > nodeName  : 노드 고유 이름
+	    nodeValue : 노드 값을 저장
+	    nodeType  : 노드 고유의 타입 저장
+	                1 - 요소, 2 - 속성, 3 - 텍스트  
+*/
+</style>
+</head>
+<body>
+	<h1>상대 위치 선택</h1>
+	<div> <!-- parentNode -->
+		<nav id="gnb">
+			<ul> <!-- children[0] -->
+				<li class="first">목록 - 1</li> <!-- children[0].children[0] -->
+				<li>목록 - 2</li>
+				<li>목록 - 3</li>
+			</ul>
+		</nav>
+	</div>
+	<script>
+		let gnb = document.getElementById('gnb');
+		document.write(gnb.parentNode + '<br>');
+ 		document.write(gnb.children[0] + '<br>');
+		document.write(gnb.children[0].children[0] + '<br>');
+		document.write(gnb.children[0].children[0].nextElementSibling + '<br>');
+		document.write(gnb.children[0].children[2].previousElementSibling + '<br>');
+		document.write(gnb.children[0].firstChild + '<br>');
+		document.write(gnb.children[0].tagName + '<br>');
+		document.write(gnb.children[0].children[0].firstChild.nodeValue + '<br>');
+		document.write(gnb.children[0].children[1].nodeType + '<br>');
+		document.write(gnb.id + '<br>');
+		document.write(gnb.children[0].firstChild.nodeType + '<br>');
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

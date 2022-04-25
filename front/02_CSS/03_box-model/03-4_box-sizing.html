@@ -1,0 +1,68 @@
+
+<!-- 03_box-model/03-4_box-sizing.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box-sizing</title>
+<style type="text/css">
+/*  
+	# box-sizing
+	- box-sizing 속성은 width, height 속성의 대상 영역을 변경합니다
+	- box-sizing 은 기본값은 content-box 이고, 
+	  border-box 로 지정하면 margin 을 제외한 박스 모델 전체를 width, height 속성의 대상 영역으로 지정 할 수 있습니다
+*/
+body {
+	font-weight: bold; font-size: 20px;
+}
+
+.content_box {
+	width: 500px;
+	border: 10px solid blue;
+	padding: 50px;
+	margin: 50px;
+	background-color: #FAED7D;
+}
+
+.border_box {
+	box-sizing: border-box;
+	width: 500px;
+	border: 10px solid blue;
+	padding: 50px;
+	margin: 50px;
+	background-color: #FAED7D;
+}
+</style>
+</head>
+<body>
+	<h1>box-sizing</h1>
+	<div class="content_box">
+		content-box
+	</div>
+	<div class="border_box">
+		border-box
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

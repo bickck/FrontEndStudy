@@ -1,0 +1,76 @@
+
+<!-- 01_selector/12_css_일반 구조 선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>일반 구조 선택자</title>
+<style type="text/css">
+/*  
+	# 일반 구조 선택자
+	- 특정한 위치에 있는 태그를 선택하는 선택자 입니다
+	- :first-child      -> 형제 관계 중에서 첫번째 요소를 선택합니다
+	  :last-child       -> 형제 관계 중에서 마지막 요소를 선택합니다
+	  :nth-child(n)     -> 형제 관계 중 앞에서 n번째 요소를 선택합니다
+	  :nth-last-child(n)-> 형제 관계 중 뒤에서 n번째 요소를 선택합니다
+	    > n 은 0부터 시작하는 정수
+*/
+
+
+
+/* ul 의 자식 요소인 li 요소 중에서 앞에서부터 시작하여 짝수번째 요소들의 색상을  gray 로 설정 */
+ul > li:nth-child(2n) { color: gray;}
+
+/* ul 의 자식 요소인 li 요소 중에서 앞에서부터 시작하여 짝수번째 요소들의 색상을  brown 로 설정 */
+ul > li:nth-last-child(2n+1) { color: brown;}
+
+/* ul 의 자식 요소인 li 요소 중에서 첫번째 요소의 색상을 red 로 설정 */
+ul > li:first-child { color: red; }
+
+/* ul 의 자식 요소인 li 요소 중에서 마지막 요소의 색사을 blue 로 설정 */
+ul > li:last-child { color: blue; }
+</style>
+</head>
+<body>
+	<h1>일반 구조 선택자</h1>
+	<br>
+	<ul>
+		<li> one </li>
+		<li> two </li>
+		<li> three </li>
+		<li> four </li>
+		<li> five </li>
+		<li> six </li>
+		<li> seven </li>
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

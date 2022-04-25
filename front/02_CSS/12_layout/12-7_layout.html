@@ -1,0 +1,214 @@
+
+<!-- 12_layout/12-7_layout.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>layout</title>
+<style type="text/css">
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+	font-famliy: "돋움", sans-serif;
+	color: dimgray;
+	background-color: whitesmoke; 	
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+/* wrap  */
+#wrap {
+	width: 100%; 
+	margin-top: 60px;
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%; height: 60px;
+	z-index: 1000;
+	background-color: white;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5);
+	border: 1px solid red;
+}
+nav {
+	float: right;
+}
+.logo {
+	display: inline-block;
+	height: 30px;
+	margin: 10px 0 10px 20px;
+}
+.nav-items > li {
+	display: inline-block;
+}
+.nav-items > li > a {
+	line-height: 60px;
+	padding: 0 30px;
+	color: rgba(0, 0, 0, 0.5);
+}
+.nav-items > li > a:hover {
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+/* content-wrap */
+#content-wrap:after {
+	content: "";
+	display: block;
+	clear: both;
+/* 	border: 1px solid navy; */
+}
+
+/* aside */
+aside {
+	position: fixed;
+	top: 60px;
+	bottom: 0;
+	width: 200px;
+	padding-top: 25px;
+	background-color: #333;
+	border: 1px solid orange;
+}
+aside h1 {
+	color: white;
+	padding: 10px 0 10px 20px;
+}
+aside > ul {
+	width: 200px;
+}
+aside > ul > li > a {
+	display: block;
+	color: white;
+	padding: 10px 0 10px 20px;
+}
+aside > ul > li > a:hover {
+	background-color: silver; 
+}
+
+/* section */
+section {
+	float: right;
+	width: 80%;
+	margin-left: 200px;
+	border: 1px solid green;
+}
+article {
+	margin: 10px;
+	padding: 25px;
+	background-color: white;
+}
+
+/* footer */
+footer {
+	position: absolute;
+	width: 100%; height: 60px;
+	background-color: lightgray;
+}
+</style>
+</head>
+<body>
+	<!-- wrap -->
+	<div id="wrap">
+		<header>
+			<a class="logo" href="">
+				<img src="../../image/layout_image/logo.gif">
+			</a>
+			<nav>
+				<ul class="nav-items">
+					<li><a href="">Home</a></li>
+					<li><a href="">News</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">About</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<!-- // wrap -->
+	<!-- content-wrap -->
+	<div id="content-wrap">
+		<aside>
+			<h1>Aside</h1>
+			<ul>
+				<li><a href="" class="active">menu-1</a></li>
+				<li><a href="">menu-2</a></li>
+				<li><a href="">menu-3</a></li>
+				<li><a href="">menu-4</a></li>
+			</ul>
+		</aside>
+		<section>
+			<article id="menu_1">
+				<h1>Menu-1</h1>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+			</article>
+			<article id="menu_2">
+				<h1>Menu-2</h1>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+			</article>
+			<article id="menu_3">
+				<h1>Menu-3</h1>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+			</article>
+			<article id="menu_4">
+				<h1>Menu-4</h1>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+				<p>menu-1 content </p>
+			</article>
+		</section>
+	</div>
+	<!-- // content-wrap -->
+	<!-- footer -->
+	<footer>
+		Copyright &copy; 2022 
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+
+<!-- 01_basic/01-6_js-variable.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js 변수</title>
+<script type="text/javascript">
+	/* 
+		# var 키워드를 사용해서 변수 선언
+	*/
+	var va;
+	var vb = 7;
+	document.write(vb, "<br>");
+	
+	var vc, vd;
+	vc = 1;
+	vd = 2;
+	document.write("vc : ", vc, " - vd : ", vd , "<br>");
+	
+	/*
+		# let 키워드를 사용한 변수 선언 ( ES6 )
+	    - ES6(ECMAScript 6) 에서 추가 되었습니다
+	    - var 와 let 의 차이점은 유효범위가 다릅니다
+	      > var : 전역 변수
+	        let : 지역 변수
+	*/
+	{
+		var seven = 7;         
+		document.write("seven : ", seven, "<br>");
+		
+		let five = 5;
+		document.write("five : ", five, "<br>");
+	}
+	document.write("seven : ", seven, "<br>");
+	//document.write("five : ", five, "<br>"); Error
+	
+	/*
+		# const 키워드 상수 ( ES6 )
+		- const 키워드를 적용하면 값을 변경할 수 없습니다
+		- 선언과 동시에 값을 지정해야 합니다
+	*/
+	const ca = 1;
+	document.write("ca : ", ca, "<br>");
+	// ca = 2; Error
+	//const cb; Error
+	
+	/*
+	데이터 타입
+	- 숫자, 문자열 (' ', " "), boolean(true, false), undefined, null, Object, Symbol
+	*/
+	var foo = null;
+	var key = Symbol("es6");
+	console.log(typeof key);
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

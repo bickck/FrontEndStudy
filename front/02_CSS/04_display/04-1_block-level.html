@@ -1,0 +1,91 @@
+
+<!-- 04_display/04-1_block-level.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>블록 레벨 요소</title>
+<style type="text/css">
+/*  
+	# block 레벨 요소
+	- 항상 새로운 라인에서 시작합니다
+	- 화면 크기 전체의 가로폭을 차지합니다
+	- width, height, margin, padding 속성 지정이 가능합니다
+	- block 레벨 요소 안에 inline 요소를 사용할 수 있습니다
+	- h1 ~ h6, div, p, ol, ul, li, hr, table, form
+	
+	# inline 레벨 요소
+	- 새로운 라인에서 시작하지 않으며, 문장의 중간에 들어갈 수 있습니다
+	- content 의 너비만큼 가로폭을 차지합니다
+	- width, height 속성을 지정할 수 없습니다. 상하 여백은 line-height 로 지정합니다
+	- inline 요소 뒤에 공백이 있는 경우, 정의하지 않은 공백이 자동 저장 됩니다
+	- inline 요소 안에 block 레벨 요소를 포함 할 수 없습니다
+	- a, span, img, strong, br, input, select, textarea, button
+*/
+
+h1 {
+	border: 2px solid red;
+}
+
+p {
+	border: 2px solid yellow;
+	background-color: orange;
+	font-size: 20px;
+	padding: 30px;
+}
+
+.content {
+	background-color: tomato;
+	width: 300px; height: 100px;
+	margin: 30px;
+	padding: 50px;
+}
+
+pre { font-size: 20px; font-weight: bold; }
+
+span {
+	background-color: navy;
+	color: white;
+	padding: 5px;
+}
+</style>
+</head>
+<body>
+	<h1>block 레벨 요소</h1>
+	<p> width, height 미지정 -> width: 100%, height: auto </p>
+	<div class="content">
+		<pre>width: 300px, height: 100px </pre>
+	</div>
+	<br>
+	
+	<h1><span>inline</span> 레벨요소</h1>
+	<a href=""> link 1</a>
+	<a href=""> link 2</a>
+	<img src="../../image/img/img_submit.gif">
+	<img src="../../image/img/img_submit.gif">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

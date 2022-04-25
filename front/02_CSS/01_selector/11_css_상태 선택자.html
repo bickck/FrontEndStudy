@@ -1,0 +1,79 @@
+
+<!-- 01_selector/11_css_상태 선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상태 선택자</title>
+<style type="text/css">
+/*  
+	# 상태 선택자
+	- 입력 양식의 상태를 선택할 때 사용합니다
+	- :checked    -> 체크 상태의 input 태그를 선택합니다
+	  :focus      -> 초점이 맞추어진 input 태그를 선택합니다
+	  :enabled    -> 사용 가능한 input 태그를 선택합니다
+	  :disabled   -> 사용 불가능한 input 태그를 선택합니다  
+*/
+
+/* input 요소가 사용 가능한 상태일 때, input 요소 바로 뒤에 위치한 인접 형제 span 요소의 색상을 blue 로 지정 */
+input:enabled + span {
+	color: blue;
+}
+
+/* input 요소가 사용 불가능한 상태일 때, input 요소 바로 뒤에 위치한 인접 형제 span 요소의 색상을 gray 로 지정 */
+input:disabled + span {
+	color: gray;
+	text-decoration: line-through;
+}
+
+/* input 요소가 체크 상태일 때, input 요소 바로 뒤에 위치한 인접 형제 span 요소의 색상을 red 로 지정 */
+input:checked + span {
+	color: red;
+}
+
+/* test_a 아이디에 포커스가 들어오면, 배경색을 yellow 로 지정 */
+#test_a:focus {
+	background-color: yellow;
+}
+
+/* test_a 아이디에 포커스가 들어오면, 배경색을 pink 로 지정 */
+#test_b:focus {
+	background-color: pink;
+}
+</style>
+</head>
+<body>
+	<h1>상태 선택자</h1>
+	<div>
+		<p><input type="checkbox" value="bicycle" checked><span>bicycle</span></p>
+		<p><input type="checkbox" value="car"><span>car</span></p>
+		<p><input type="checkbox" value="motorcycle" disabled><span>motorcycle</span></p>
+	</div>
+	<br>
+	
+	<p>focus 테스트 a : <input type="text" id="test_a"></p>
+	<p>focus 테스트 b : <input type="text" id="test_b"></p>
+	
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+
+<!-- 04_form/27_add-attribute.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 input</title>
+</head>
+<body>
+<!--  
+	# autofocus
+	- 페이지를 불러오자 마자 입력 필드안에 마우스 커서를 위치합니다
+	
+	# required
+	- 필수 입력 필드를 체크합니다
+	
+	# autocomplete
+	- 개인 정보를 입력할 때 자동 완성 기능을 설정합니다 : on(기본값), off
+-->
+	<H3>모임 설정</H3>
+	<br>
+	<form action="">
+		<table>
+			<tr>
+				<td>날짜</td><td><input type="date" id="set_date" name="setDate"></td>
+			</tr>
+			<tr>
+				<td>시간</td><td><input type="time" id="set_time" name="setTime"></td>
+			</tr>
+			<tr>
+				<td>장소</td><td><input type="text" id="set_place" name="setPlace"></td>
+			</tr>
+		</table>
+		<br>
+		<input type="submit" value="확인">
+	</form>
+	<br>
+	
+	<h3> 온도 조절 </h3>
+	<form action="">
+		지속 시간(0.0 ~ 10.0 시간) : 
+		<input type="number" id="time" min="0.0" max="10.0" step="0.5"><br><br>
+		온도 설정 : 10&deg;
+		<input type="range" min="10" max="30" list="temperatures"> 30&deg;
+		<datalist id="temperatures">
+			<option value="15" label="low">
+			<option value="20" label="medium">
+			<option value="25" label="high">
+		</datalist>
+		<br>
+		<input type="submit" value="설정">
+	</form>
+	<br>
+	
+	<h3> 정보 입력 </h3>
+	<form action="">
+		<fieldset>
+			<legend> 회원 정보 </legend>
+			<label for="user_name"> 이 름 </label>
+			<input type="text" id="user_name" name="userName" autofocus placeholder="공백없이 입력하세요" required>
+			<br>
+			<label for="user_mail"> 이메일 </label>
+			<input type="email" id="user_mail" name="userMail" placeholder="abc@test.com" required>
+			<br>
+			<label for="user_tel"> 전화번호 </label>
+			<input type="tel" id="user_tel" name="userTel" placeholder="010-0000-0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+		</fieldset>
+		<br>
+		<input type="submit" value="완료">
+	</form>
+	
+	<br>
+	
+	<h3> 검색 </h3>
+	<p>검색어 : <input type="search" placeholder="검색어를 입력하세요"> <input type="button" value="검색"></p>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

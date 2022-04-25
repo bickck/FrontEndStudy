@@ -1,0 +1,74 @@
+
+<!-- 07_shadow/07-4_radial-gradient.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>radial-gradient</title>
+<style type="text/css">
+/*  
+	# radial gradient
+	- 원형 그라데이션 효과를 지정합니다
+	- background : radial-gradient()
+	- radial-gradient( shape | size | position | color1, color2 ...)
+	  > shape : 모양을 지정합니다 
+	    size  : 크기를 지정합니다
+	    position : 중심의 위치를 지정합니다
+	    color    : 색상을 지정합니다 
+*/
+
+* { margin: 0; padding: 0;} 
+
+div {
+	margin: 20px;
+}
+.rg_1 {
+	width: 300px; height: 300px;
+	background: radial-gradient( lightcoral, brown);
+}
+.rg_2 {
+	width: 300px; height: 300px;
+	background: radial-gradient( lightcoral, brown);
+}
+
+/* 직사각형 일때는 모양 지정이 가능합니다 : circle, ellipse */
+.rg_3 {
+	width: 400px; height: 300px;
+	background: radial-gradient( circle, white, green);
+}
+</style>
+</head>
+<body>
+	<h1>radial gradient</h1>
+	<div class="rg_1"> radial gradient</div>
+	<div class="rg_2"> radial gradient</div>
+	<div class="rg_3"> radial gradient</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

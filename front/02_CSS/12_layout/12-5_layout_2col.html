@@ -1,0 +1,113 @@
+
+<!-- 12_layout/12-5_layout_2col.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2단 레이아웃</title>
+<!--  
+	# header     : 페이지 상단에 주로 사용하며 로고나 메뉴등의 콘텐츠를 표시합니다
+	# footer     : 페이지 하단에 주로 사용하며 저작권, 주소 등을 표시합니다 
+	# main       : 페이지의 메인 콘텐츠를 표시합니다
+	# nav        : 상단 메뉴, 메인 메뉴, 서브 메뉴와 같이 각종 메뉴를 표시합니다
+	# section    : 본문의 여러 내용(article)을 포함하는 공간을 표시합니다
+	# article    : 본문의 주내용을 표시합니다
+	# aside      : 페이지의 왼쪽 or 오른쪽에 들어가는 콘텐츠로 메뉴나 배너 등을 표시합니다
+	# figcaption : figure 요소에 대한 캡션을 정의합니다
+	# figure     : 사진, 코드목록 등과 같은 자체 포함된 컨텐츠를 표시합니다
+-->
+<style type="text/css">
+body, header, aside, nav, main, section, article, footer, h1, h2 {
+	margin: 0; padding: 0;
+}
+body {
+	width: 800px;
+	margin: 0 auto;
+	border: 1px solid gray;
+}
+header {
+	width: 784px; height: 100px;
+	padding: 10px 0 0 10px;
+	margin: 2px;
+	border: 1px solid red;
+}
+aside {
+	float: left;
+	width: 168px; height: 400px;
+	margin: 2px 0 2px 2px;
+	border: 1px solid orange;
+}
+nav {
+	height: 150px;
+	margin: 0 2px;
+	border: 1px solid olive;
+}
+main {
+	float: right;
+	width: 620px; height: 400px;
+	margin: 2px;
+	border: 1px solid navy;
+}
+section {
+	width: 600px; height: 170px;
+	margin: 6px;
+	border: 1px solid blue;
+}
+footer {
+	width: 784px; height: 100px;
+	padding: 10px 0 0 10px;
+	margin: 2px;
+	border: 1px solid brown;
+	clear: both;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1>Header</h1>
+	</header>
+	<aside>
+		<h2>Aside</h2>
+		<nav>
+			<h3>nav</h3>
+		</nav>
+	</aside>
+	<main>
+		<h2>Main content</h2>
+		<section>
+			<article>콘텐츠</article>
+		</section>
+		<section>
+			<article>콘텐츠</article>
+		</section>
+	</main>
+	<footer>
+		<h2>Footer</h2>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

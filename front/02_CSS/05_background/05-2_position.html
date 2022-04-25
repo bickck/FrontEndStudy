@@ -1,0 +1,74 @@
+
+<!-- 05_background/05-2_position.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position 속성</title>
+<style type="text/css">
+/*  
+	# background-position
+	- 배경이미지의 위치를 지정합니다
+	  > background-position : 키워드
+	    background-position : x 좌표
+	    background-position : x 좌표, y 좌표
+*/
+
+/* 위아래 여백 없이 가운데 정렬 */
+body { margin: 0 auto; }
+
+div { 
+	background-image: url('../../image/bg_image/dot.png');
+	background-color: coral;
+	background-repeat: no-repeat;
+	width: 300px; height: 300px;
+	margin: 0 1em 1em 0;
+	float: left;
+}
+
+.top { background-position: top; }
+.bottom { background-position: bottom; }
+.left { background-position: left; }
+.right { background-position: right; }
+.point_x { background-position: 50px; }
+.point_xy { background-position: 150px 150px; }
+.img_two {
+	background-image: url('../../image/bg_image/dot.png'), url('../../image/img/img_submit.gif');
+	background-position: 0px 0px, center;
+}
+
+</style>
+</head>
+<body>
+	<h1>background position</h1>
+	<div class="default"> default </div>
+ 	<div class="top"> top </div>
+	<div class="bottom"> bottom </div>
+	<div class="left"> left </div>
+	<div class="right"> right </div>
+	<div class="point_x"> 50px </div>
+	<div class="point_xy"> 150px 150px </div>
+	<div class="img_two"> image 2개 </div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

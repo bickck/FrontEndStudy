@@ -1,0 +1,62 @@
+
+<!-- 11_effect/11-3_Quiz-animation.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz-animation</title>
+<style type="text/css">
+/* span */
+@keyframes changeColor {
+	0% { color: red;}
+	50% { color: green;}
+	100% { color: blue;}
+}
+span {
+	font-size: 20px;
+	font-weight: bold;
+	animation: changeColor 3s infinite;
+}
+
+@keyframes bomb {
+	from { font-size: 500%; }
+	to { font-size: 100%; }
+}
+h3 {
+	animation: bomb 1s 3;
+	animation-direction: alternate-reverse;
+	animation-play-state: paused;
+}
+input:checked + h3 {
+	animation-play-state: running;
+}
+</style>
+</head>
+<body>
+	<h1>Quiz animation</h1>
+	<p><span>span</span> 텍스트를 3초 간격으로 red, green, blue 색상으로 변경 됩니다</p>
+	<br>
+	<input type="checkbox">
+	<h3>꽝!</h3>
+	<p>꽝! 글자가 3초 동안 500 ~ 100% 로 작아집니다</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

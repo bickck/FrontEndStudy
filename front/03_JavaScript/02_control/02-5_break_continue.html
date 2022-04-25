@@ -1,0 +1,57 @@
+
+<!-- 02_contorl/02-5_break_continue.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>break, continue</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n = 1;
+		var sum = 0 ;
+		while(true){
+			sum += n;
+			if(sum > 100)
+				break;
+			++n;
+		}
+		document.write("sum : ", sum, "<br><br>");
+		
+		var last = 20;
+		for( let i=1 ; i<=last ; i++){
+			if(i%3 == 0){
+				document.write("Jump~!<br>");
+				continue;
+			}
+			document.write(i, "<br>");
+		}
+	
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

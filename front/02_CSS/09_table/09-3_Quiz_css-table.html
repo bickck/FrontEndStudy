@@ -1,0 +1,87 @@
+
+<!-- 09_table/09-3_Quiz_css-table -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz table</title>
+<style type="text/css">
+/*  
+	# Quiz_css-table.png 의 내용을 구현하세요
+*/
+
+/* table */
+table {
+	border-collapse: collapse;
+	font-size: 1.4em;
+}
+th, td {
+	text-align: left;
+	padding: 10px;
+	width: 100px; height: 20px;
+}
+thead, tfoot {
+	background: silver;
+	color: yellow;
+}
+tbody tr:nth-child(even){
+	background: #f0f8ff;
+}
+tbody tr:hover {
+	background: lavenderblush;
+}
+
+</style>
+</head>
+<body>
+	<h1>1학기 성적</h1>
+	<hr>
+	<table>
+		<thead>
+			<tr>
+				<th>이름</th><th>HTML</th><th>CSS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>루피</td><td>80</td><td>70</td>
+			</tr>
+			<tr>
+				<td>조로</td><td>95</td><td>99</td>
+			</tr>
+			<tr>
+				<td>나미</td><td>85</td><td>90</td>
+			</tr>
+			<tr>
+				<td>초파</td><td>50</td><td>40</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>합</td><td>310</td><td>249</td>
+			</tr>
+		</tfoot>
+	</table>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

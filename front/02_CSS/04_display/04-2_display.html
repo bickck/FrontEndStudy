@@ -1,0 +1,87 @@
+
+<!-- 04_display/04-2_display.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display</title>
+<style type="text/css">
+/*  
+	# dispaly 속성
+	- 태그 영역의 표현 방식을 지정합니다
+	- none   : 해당 요소를 화면에 표시하지 않습니다
+	  block  : block 특성을 가지는 요소로 지정합니다
+	  inline : inline 특성을 가지는 요소로 지정합니다
+	  inline-block : inline-block 특성을 가지는 요소로 지정합니다
+	  
+	  
+*/
+
+.none {
+	display: none;
+}
+
+.inline {
+	display: inline;
+	border: 2px solid navy;
+	background-color: gold;
+	margin: 20px; /* 속성값이 좌우만 적용 */
+}
+
+.block {
+    display: block;
+	border: 2px solid red;
+	background-color: pink;
+}
+
+.inline-block {
+	display: inline-block;
+	border: 2px solid navy;
+	background-color: gold;
+	margin : 20px;
+}
+
+</style>
+</head>
+<body>
+	<h1>none</h1>
+	<span> none </span>
+	<div class="none"> 화면에서 보이지 않습니다</div>
+	<span> none </span>
+	<br><br>
+	<div class="inline"> div 1 </div>
+	<div class="inline"> div 2 </div>
+	<div class="inline"> div 3 </div>
+	<br><br>
+	<span> span </span>
+	<span class="block"> div block </span>
+	<span> span </span>
+	<br><br>
+	<div class="inline-block"> inline block 1 </div>
+	<div class="inline-block"> inline block 2 </div>
+	<div class="inline-block"> inline block 3 </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

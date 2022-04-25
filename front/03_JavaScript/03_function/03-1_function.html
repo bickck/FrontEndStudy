@@ -1,0 +1,80 @@
+
+<!-- 03_function/03-1_function.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function 1</title>
+<script type="text/javascript">
+	hi();
+	function hi(){
+		document.write("안녕하세요~ ^^<br>");
+	}
+	// 위와 같은 방식의 함수는 함수 선언과 전,후 어디서나 호출이 가능합니다
+	hi();
+	
+	
+	//hi2(); Error
+	var hi2 = function(){
+		document.write("안녕하세요~ hi~<br>");
+	}
+	// 위와 같은 방식의 함수는 함수 선언후에 호출이 가능합니다
+	hi2();
+	
+	var vf = function hi3(){
+		document.write("hi~ hi~<br>");
+	}
+	//hi3(); Error
+	vf();
+	
+	function test(a, b){
+		document.write("a : ", a, " - b : ", b, "<br>");
+	}
+	
+	test('dataA', 'dataB');
+	test('dataC');       // 값이 매개변수 보다 적으면, 값이 없는 매개변수는 undefined 됩니다
+	test('dataD', 'dataE', 'dataF'); // 값이 매개변수 보다 많으면, 많은 값은 무시 됩니다
+</script>
+<style type="text/css">
+h1 { 
+	font-family: "맑은 고딕", sans-serif;
+}
+h1 span {
+	color: gray;}
+
+</style>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

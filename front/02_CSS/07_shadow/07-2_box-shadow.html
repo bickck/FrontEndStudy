@@ -1,0 +1,85 @@
+
+<!-- 07_shadow/07-2_box-shadow.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box shadow</title>
+<style type="text/css">
+/*  
+	# box shadow
+	- 요소에 그림자 효과를 지정합니다
+	- box-shadow : offset-x | offset-y | blur-radius | spread | shadow-color 
+	  > offset-x : 그림자를 가로 방향으로 이동합니다 (필수)
+	    offset-y : 그림자를 수직 방향으로 이동합니다 (필수)
+	    blur-radius   : 그림자의 흐림 정도를 합니다. 지정값만큼 그림자가 커지고 흐려집니다.
+	    spread-radius : 그림자를 크레 확장합니다
+	    shadow-color  : 그림자의 색상을 지정합니다
+	    inset         : 그림자를 요소의 안쪽에 만듭니다
+*/
+
+div {
+	width : 300px; height: 50px;
+	margin: 20px;
+	padding: 10px;
+	background-color: orange;
+}
+
+.box_a {
+	box-shadow: 10px 10px;
+}
+.box_b {
+	box-shadow: 5px 5px 5px;
+}
+.box_c {
+	box-shadow: 5px 5px 5px 5px;
+}
+.box_d {
+	box-shadow: 5px 5px 5px 5px silver;
+}
+.box_e {
+	box-shadow: 5px 5px 20px 5px silver inset;
+}
+.box_f {
+	box-shadow: 5px 5px 20px 5px orangered inset, -5px -5px 20px 5px orangered inset;
+}
+
+</style>
+</head>
+<body>
+	<h1>box shadow</h1>
+	<div class="box_a"> box shadow </div>
+	<div class="box_b"> box shadow </div>
+	<div class="box_c"> box shadow </div>
+	<div class="box_d"> box shadow </div>
+	<div class="box_e"> box shadow </div>
+	<div class="box_f"> box shadow </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

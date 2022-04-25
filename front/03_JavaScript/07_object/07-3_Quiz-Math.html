@@ -1,0 +1,57 @@
+
+<!-- 07_object/07-3_Quiz-Math.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz Math</title>
+</head>
+<body>
+	<script>
+		// 1 ~ 9 사이의 랜덤값 생성
+		function randomInt(){  
+			return Math.floor(Math.random() * 9) + 1;
+		}
+		// 문제 생성
+		let quiz = randomInt() + " * " + randomInt();
+		// 문제 표시
+		let user = prompt(quiz + " 값을 입력하세요?");
+		
+		let answer = eval(quiz); // 정답 계산
+		if(answer == user){
+			document.write("정답!! ^^ <br>");
+		} else {
+			document.write("틀렸어요!! ㅠㅠ <br>");
+		}
+		document.write(quiz + " = " + "<strong>" + answer + "</strong>입니다<br>");
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

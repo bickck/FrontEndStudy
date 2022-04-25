@@ -1,0 +1,55 @@
+
+<!-- 01_selector/15_css_부정 선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>부정 선택자</title>
+<style type="text/css">
+/*  
+	# 부정 선택자
+	- 선택자에 반대로 적용할 때 사용합니다
+	- :not(선택자)  -> 선택자에 해당하지 않은 요소를 선택
+*/
+
+/* input 요소 중에서  type 속성값이 password 가 아니 요소의 배경색을 yellow 로 설정 */
+input:not([type=password]){
+	background: yellow;
+}
+
+</style>
+</head>
+<body>
+	<h1>부정 선택자</h1>
+	<p>text A : <input type="text" id="text_a" name="textA"></p>
+	<p>text B : <input type="text" id="text_b" name="textB"></p>
+	<p>pwd : <input type="password" id="pwd" name="pwd"></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

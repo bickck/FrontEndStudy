@@ -1,0 +1,72 @@
+
+<!-- 01_selector/13_css_형태 구조 선택자 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>형태 구조 선택자</title>
+<style type="text/css">
+/*  
+	# 형태 구조 선택자
+	- 일반 구조 선택자와 비슷하지만 태그 형태를 구분합니다
+	- :first-of-type            -> 형제 관계 중에서 첫번째로 나오는 특정 태그를 선택
+	  :last-of-type             -> 형제 관계 중에서 마지막으로 나오는 특정 태그를 선택
+	  :nth-of-type(n)           -> 형제 관계 중에서 앞에서 n번째에 나오는 특정 태그를 선택
+	  :nth-last-of-type(n)      -> 형제 관계 중에서 뒤에서 n번째에 나오는 특저 태그를 선택
+*/
+
+/* p 요소의 부모 요소의 자식 요소중 첫번째 나오는 p 요소의 색상을 red 로 설정 */
+p:first-of-type { color: red; }
+
+/* p 요소의 부모 요소의 자식 요소중 마지막에 나오는 p 요소의 색상을 brown 으로 설정 */
+p:last-of-type { color: brown; }
+
+/* p 요소의 부모 요소의 자식 요소중 앞에서 2번째에 나오는 p 요소의 색상을 blue 로 설정 */
+p:nth-of-type(2) { color: blue; }
+
+/* p 요소의 부모 요소의 자식 요소중 뒤에서 2번째에 나오는 p 요소의 색상을 green 으로 설정 */
+p:nth-last-of-type(2) { color: green; }
+</style>
+</head>
+<body>
+	<h1>형태 구조 선택자</h1>
+	<p> first string </p>
+	<p> second string </p>
+	<p> third string </p>
+	<p> fourth string </p>
+	<br>
+	<div>
+		<h2> 제목 - 2</h2>
+		<p> first string </p>
+		<p> second string </p>
+		<p> third string </p>
+		<p> fourth string </p>	
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

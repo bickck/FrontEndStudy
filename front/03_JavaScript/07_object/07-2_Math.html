@@ -1,0 +1,88 @@
+
+<!-- 07_object/07-2_Math.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Math</title>
+</head>
+<body>
+	<script>
+	/*
+		# Math
+		- 수학에서 자주 사용하는 상수와 함수들을 미리 구현해 놓은 표준 내장 객체입니다
+		
+		# Math.min()
+		- 가장 작은수를 반환합니다
+	*/
+	document.write(Math.min(2, 10, 1, 7, 5) + "<br>");
+	document.write(Math.min(5, 10, "2", 7, 4) + "<br>");
+	
+	/*
+		# Math.max()
+		- 가장 큰수를 반환합니다
+	*/
+	document.write(Math.max(2, 10, 1, 7, 5) + "<br>");
+	document.write(Math.max(5, "15", "2", 7, 4) + "<br>");
+	
+	/*
+		# Math.random()
+		- 0.0 ~ 1.0 미만 사이의 랜덤값을 생성합니다
+	*/
+	document.write(Math.random() + "<br>");
+	document.write(Math.random() * (10 - 1) + 1 + "<br>");
+	
+	/*  
+		# Math.round()
+		- 소수점 첫째자리에서 반올림 합니다
+	*/
+	document.write(Math.round(12.34) + "<br>");
+	document.write(Math.round(12.56) + "<br>");
+	
+	/*  
+		# Math.floor()
+		- 어떤 수보다 크지 않은 최대의 정수를 반환합니다
+	*/
+	document.write(Math.floor(1.2) + "<br>");
+	document.write(Math.floor(3.9) + "<br>");
+	document.write(Math.floor(-1.9) + "<br>");
+	document.write("<br>");
+	
+	var vr = Math.random();
+	document.write(Math.floor(vr * 4) + "<br>"); /* 0 ~ 3 */
+	document.write(Math.floor(vr * 4) + 1 + "<br>"); /* 1 ~ 4 */
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

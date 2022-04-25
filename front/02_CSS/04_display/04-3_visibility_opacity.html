@@ -1,0 +1,109 @@
+
+<!-- 04_display/04-3_visibility_opacity.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>visibility 속성</title>
+<style type="text/css">
+/*  
+	# visibility 속성
+	- 요소를 보이게 할 것인지, 보이지 않게 할 것인지를 결정합니다
+	- visible    : 해당 요소를 보이게 합니다
+	  hidden     : 해당 요소를 보이지 않게 합니다. 해당 요소의 공간은 사라지지 않습니다
+	  collapse   : table 요소에 사용하며 행이나 열을 보이지 않게 합니다
+	  
+	# opacity 속성
+	- 투명도를 지정합니다
+	  > 0 ~ 1 (0.0 : 투명, 1.0 : 불투명)
+	 
+*/
+
+.visible { visibility: visible;}
+.hidden { visibility: hidden;}
+.none { display: none; }
+
+table, tr, td { 
+	border: 2px solid black;
+}
+
+td {
+	padding: 10px 30px;
+}
+
+.collapse {
+	visibility: collapse;
+}
+
+div, img {
+	border: 1px solid gray;
+	width: 100px; height: 150px;
+	background-color: navy;
+	color: white;
+	opacity: 0.3;
+}
+
+div:hover, img:hover {
+	opacity: 1;
+}
+
+</style>
+</head>
+<body>
+	<h1>visibility</h1>
+	<h2 class="visible"> visible </h2>
+	<hr>
+	<h2 class="hidden"> hidden </h2>
+	<hr>
+	<h2 class="none"> dispaly: none </h2>
+	<hr>
+	<br>
+	<table>
+		<tr>
+			<td> A </td><td> B </td>
+		</tr>
+	</table>
+	<br>
+	<table class="collapse">
+		<tr>
+			<td> C </td><td> D </td>
+		</tr>
+	</table>
+	<hr>
+	
+	<h1>opacity</h1>
+	<div>
+		<span> opacity : 0.3 </span>
+	</div>
+	<br>
+	<img src="../../image/img/라이언_후드.png">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+
+<!-- 07_shadow/07-1_text-shadow.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text shadow</title>
+<style type="text/css">
+/*  
+	# text-shadow
+	- 글자에 그림자 효과를 지정합니다
+	- text-shadow : offset-x | offset-y | blur-radius | shaodw-color  
+	  > offset-x : 그림자의 수평 거리를 지정합니다(필수)
+	    offset-y : 그림자의 수직 거리를 지정합니다(필수)
+	    blur-radius : 그림자의 흐림 정도를 지정합니다. 지정값만큼 그림자가 커지고 흐려집니다
+	    shadow-color : 그림자의 색상을 지정합니다
+*/
+
+.s1 {
+	text-shadow: 3px 3px;
+}
+.s2 {
+	text-shadow: 3px 3px 2px;
+}
+.s3 {
+	text-shadow: 3px 3px 2px red;
+}
+.s4 { 
+	text-shadow: 0px 0px 5px blue;
+}
+.s5 { 
+	color: white;
+	text-shadow: 0px 0px 5px navy;
+}
+.s6 { 
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+.s7 {
+	color: yellow;
+	text-shadow: 2px 2px 5px black, 0 0 10px gold;
+}
+.s8 {
+	font-size: 30px;
+	color: white;
+	text-shadow: 2px 2px 5px black, 0 0 20px indigo;
+}
+.s9 {
+	font-size: 30px;
+	color: white;
+	text-shadow: 2px 2px 5px black, 0 0 20px indigo, 0 0 10px navy;
+}
+.s10 {
+	font-size: 3em;
+	text-shadow: -2px -2px 5px black, -6px -6px 3px gray, -9px -9px 3px silver;
+}
+
+p {
+	width: 600px;
+	margin: 20px;
+	padding: 20px 0;
+	text-align: center;
+	font-family: "맑은 고딕", serif;
+	font-size: 50px;
+	font-weight: bold;
+}
+.sp1 {
+	background-color: silver;
+	text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.9);
+}
+.sp2 {
+	background-color: orange;
+	color: white;
+	text-shadow: 3px 3px 3px silver;
+}
+</style>
+</head>
+<body>
+	<h1>text shadow</h1>
+	<h2 class="s1">Text shadow Offset</h2>
+	<h2 class="s2">Text shadow Offset</h2>
+	<h2 class="s3">Text shadow Offset</h2>
+	<h2 class="s4">Text shadow Offset</h2>
+	<h2 class="s5">Text shadow Offset</h2>
+	<h2 class="s6">Text shadow Offset</h2>
+	<h2 class="s7">Text shadow Offset</h2>
+	<h2 class="s8">Text shadow Offset</h2>
+	<h2 class="s9">Text shadow Offset</h2>
+	<h2 class="s10">Text shadow Offset</h2>
+	<p class="sp1">Text shadow Offset</p>
+	<p class="sp2">Text shadow Offset</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

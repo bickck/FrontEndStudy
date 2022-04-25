@@ -1,0 +1,91 @@
+
+<!-- 09_event/09-16_arrow-key.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>셀 이동</title>
+<style>
+td {
+	width: 50px; height: 50px;
+	border: 1px solid gray;
+}
+</style>
+<script>
+	let td;
+	let prevIndex = 0, index = 0;
+	window.onload = function(){ // 페이지 로딩 완료시 실행
+		td = document.getElementsByTagName('td');
+		td[index].style.backgroundColor = 'silver';
+	}
+	window.onkeydown = function(e){
+		switch(e.key){
+		case "ArrowDown":
+			if(index/3 >= 2) return;  // 맨 아래
+			index += 3;
+			break;
+		case "ArrowUp":
+			if(index/3 < 1) return;   // 맨 위
+			index -= 3;
+			break;
+		case "ArrowLeft":
+			if(index%3 == 0) return;  // 가장 왼쪽
+			index--;
+			break;
+		case "ArrowRight":
+			if(index%3 == 2) return;  // 가장 오른쪽
+			index++;
+			break;
+		}
+		td[index].style.backgroundColor = "silver";
+		td[prevIndex].style.backgroundColor = "white";
+		prevIndex = index;
+		
+	}
+</script>
+</head>
+<body>
+	<h1>셀 이동</h1>
+	<table>
+		<tr>
+			<td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

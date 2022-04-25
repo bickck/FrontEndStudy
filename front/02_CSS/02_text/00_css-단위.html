@@ -1,0 +1,138 @@
+
+<!-- 02_text/00_css-단위.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 단위</title>
+<style type="text/css">
+html {
+	font-size: 14px; /* html 기본 font-size : 16px  */
+}
+body { 
+	font-size: 14px;
+	text-align: center;	
+}
+</style>
+</head>
+<body>
+	<h1>CSS 단위</h1>
+	<p> body font size : 14px; </p>
+	<div class="px">
+		Font size : 30px 
+	</div>
+	<style>
+	/* 
+	px (픽셀)
+	- 절대값이고, 디바이스 해상도에 따라서 상대적인 크기를 갖습니다
+	 */
+	.px { 
+		font-size: 30px;
+		font-weight: bold;
+		background-color: #D1B2FF;
+	}
+	</style>
+	<br>
+	
+	<div class="percent">
+		Font size : 14px * 120% = 16.8px;
+	</div>
+	<style>
+	/* 
+	%
+	- % 는 백분율 단위의 상대 단위입니다. 
+	 */
+	.percent { 
+		font-size: 120%;
+		font-weight: bold;
+		background-color: #B7F0B1;
+	}
+	</style>
+	<br>
+	
+	<div class="em">
+		Font size : 14px * 1.2em = 16.8px
+		<div class="em">
+			Font size : 16.8px * 1.2em = 20.16px
+		</div>
+	</div>
+	<style>
+	/* 
+	em
+	- em 은 배수 단위의 상대 단위입니다. 
+	*/
+	.em { 
+		font-size: 1.2em;
+		font-weight: bold;
+		background-color: #FFC19E;
+	}
+	</style>
+	<br>
+	
+	<div class="rem">
+		Font size : 14px * 1.2rem = 16.8px
+		<div class="rem">
+			Font size : 14px * 1.2rem = 16.8px
+		</div>
+	</div>
+	<style>
+	/* 
+	rem
+	- rem 은 최상위 요소의 크기를 기준으로 계산합니다 
+	 */
+	.rem { 
+		font-size: 1.2rem;
+		font-weight: bold;
+		background-color: #B2CCFF;
+	}
+	</style>
+	<br>
+	
+	<h2> 색상 단위 </h2>
+	<p class="keyword"> red </p>
+	<p class="hex"> red </p>
+	<p class="rgb"> red </p>
+	<p class="rgba"> red </p>
+	<style>
+	/*
+	색상 표현 단위
+	- 색상 지정을 위해 키워드, 색상 단위를 사용합니다
+	- https://www.w3.org/TR/css-color-3/#html4 참고
+	*/
+	.keyword { background-color: red; }
+	.hex { background-color: #FF0000; }
+	.rgb { background-color: rgb(255, 0, 0); }       /*  */
+	.rgba { background-color: rgba(255, 0, 0, 1); }
+	</style>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

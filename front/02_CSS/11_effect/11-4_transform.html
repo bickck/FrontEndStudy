@@ -1,0 +1,190 @@
+
+<!-- 11_effect/11-4_transform.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform</title>
+<style type="text/css">
+/*  
+	# transform
+	- 요소를 회전, 확대, 축소하는 등의 형태를 변형할 수 있습니다
+	- rotate    : 요소를 회전 시킵니다
+	  translate : 요소를 이동 합니다
+	  scale     : 요소를 확대, 축소 할 수 있습니다
+	              > 1 보다 큰수는 확대, 1보다 작은수는 축소
+	  skew      : 요소 모양을 비틀 수 있습니다
+	  
+*/
+
+.clear { clear: both; }
+
+/* rotate */
+.rbox {
+	width: 100px; height: 100px;
+	background-color: red;
+	margin: 20px;
+	transition: all ease 1s;
+	float:left;
+}
+.r1:hover {
+	transform: rotate( 45deg);
+}
+.r2:hover {
+	transform: rotate( -45deg);
+}
+.r3:hover {
+	transform: rotate( 720deg);
+}
+.r4:hover {
+	transform: rotateX( 180deg);
+}
+.r5:hover {
+	transform: rotateY( 180deg);
+}
+
+/* translate */
+.tbox {
+	width: 100px; height: 100px;
+	background-color: gold;
+	margin: 20px 50px;
+	transition: all 1s ease;
+	float:left;
+}
+.t1:hover {
+	transform: translate(50px, 30px); 
+}
+.t2:hover {
+	transform: translateX(50px); 
+}
+.t3:hover {
+	transform: translateY(30px); 
+}
+
+/* scale */
+.scaleBox {
+	width: 100px; height: 100px;
+	background-color: orange;
+	margin: 20px 50px;
+	transition: all 1s ease;
+	float:left;
+}
+.sb1:hover {
+	transform: scale(2.0);
+}
+.sb2:hover {
+	transform: scale(2.0, 1.5);
+}
+.sb3:hover {
+	transform: scaleX(0.5);
+}
+
+/* skew */
+.skewBox {
+	width: 100px; height: 100px;
+	background-color: lightgreen;
+	margin: 20px 50px;
+	transition: all 1s ease;
+	float:left;
+}
+.sk1:hover {
+	transform: skewX( 50deg ); 
+}
+.sk2:hover {
+	transform: skewY( 50deg ); 
+}
+.sk3:hover {
+	transform: skew( 30deg, 30deg ); 
+}
+
+/* tsBox */
+@keyframes move {
+	from{ left: 0;}
+	to{ left: 300px; }
+}
+.tsBox {
+	width: 100px; height: 100px;
+	background-color: skyblue;
+	margin: 20px 50px;
+	position: relative;
+	transition: all 1s ease;
+	animation-play-state: paused;
+}
+
+#all input:checked ~ .tsBox{
+	animation: move 1s running;
+	transform: rotate(720deg);
+}
+</style>
+</head>
+<body>
+	<h1>transform</h1>
+	<h2>rotate</h2>
+	<div class="rbox r1">rotate<br>( 45deg )</div>
+	<div class="rbox r2">rotate<br>( -45deg )</div>
+	<div class="rbox r3">rotate<br>( 720deg )</div>
+	<div class="rbox r4">rotateX<br>( 180deg )</div>
+	<div class="rbox r5">rotateY<br>( 180deg )</div>
+	<br>
+	<div class="clear"></div>
+	
+	<h2>translate</h2>
+	<div class="tbox t1">translate<br>(50px, 30px)</div>
+	<div class="tbox t2">translateX<br>(50px)</div>
+	<div class="tbox t3">translateY<br>(30px)</div>
+	<br>
+	<div class="clear"></div>
+	
+	<h2>scale</h2>
+	<div class="scaleBox sb1">scale<br>(2.0)</div>
+	<div class="scaleBox sb2">scale<br>(2.0, 1.5)</div>
+	<div class="scaleBox sb3">scaleX<br>(0.5)</div>
+	<br>
+	<div class="clear"></div>
+	
+	<h2>skew</h2>
+	<div class="skewBox sk1">skewX<br>( 50deg )</div>
+	<div class="skewBox sk2">skewY<br>( 50deg )</div>
+	<div class="skewBox sk3">skew<br>( 30deg, 30deg )</div>
+	<br>
+	<div class="clear"></div>
+	
+	<div id="all">
+		<input type="checkbox">
+		<div class="tsBox"></div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

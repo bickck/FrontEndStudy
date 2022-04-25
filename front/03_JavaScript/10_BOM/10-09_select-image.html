@@ -1,0 +1,126 @@
+
+<!-- 10_BOM/10-09_select-image.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지 선택</title>
+<style type="text/css">
+#basics {
+	height: 800px;
+}
+#basics.dark {
+	background-color: black; 
+	opacity: 0.2;
+}
+.default_img {
+	width: 70px; height: 50px;
+}
+#remove { 
+	display: none;
+}
+#remove.a {
+	display: block;
+	width: 700px; height: 500px;
+	background-color: dimgray;
+	opacity: 0.8;
+	border: 2px solid olive;
+	position: absolute;
+	left: 150px; top: 250px;
+}
+#target {
+	width: 650px; height: 390px;
+	margin: 10px 0 0 25px;
+}
+#name {
+	text-align: center;
+	text-shadow: aqua;
+}
+#div_x {
+	position: absolute; 
+	top: 0; right: 0;
+	text-align: center;
+	width: 24px; height: 24px;
+	color: white;
+}
+#div_x:hover {
+	background-color: darkgray;
+}
+</style>
+</head>
+<body>
+	<h1>이미지 선택</h1>
+	<div id="basics">
+		<h1>light box</h1>
+		<img class="default_img" id="1" src="bom_image/car01.png">
+		<img class="default_img" id="2" src="bom_image/car02.png">
+		<img class="default_img" id="3" src="bom_image/car03.png"> 
+	</div>
+	<div id="remove">
+		<div id="remove_title">
+			<div id="name">
+				<h3>super car</h3>
+			</div>
+			<div id="div_x" onclick="imgClose()">X</div>
+			<hr>
+		</div>
+		<img id="target">
+	</div>
+	<!-- script -->
+	<script>
+		window.onload = function(){
+			let thumImg = document.getElementsByClassName('default_img');
+			for(i=0 ; i<thumImg.length ; i++){
+				thumImg[i].addEventListener('click', img_listener);
+			}
+		}
+		
+		function img_listener(event){
+			console.log("이미지 실행 : " + event.target.id);
+			document.getElementById('target').src = "bom_image/car0"+event.target.id+".png";
+			
+			let basics = document.querySelector("#basics");
+			basics.setAttribute('class', 'dark');
+			
+			let remove = document.querySelector("#remove");
+			remove.setAttribute('class', 'a');
+		}
+		
+		function imgClose(){
+			let remove = document.querySelector('#remove');
+			remove.removeAttribute('class');
+			
+			let basics = document.querySelector('#basics');
+			basics.removeAttribute('class');
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

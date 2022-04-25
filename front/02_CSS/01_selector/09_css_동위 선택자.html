@@ -1,0 +1,64 @@
+
+<!-- 01_selector/09_css_동위 선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>동위 선택자</title>
+<style type="text/css">
+/*  
+	# 동위 선택자
+	- 동위 관계에서 뒤에 위치한 태그를 선택할 때 사용합니다
+	- 인접 형제 선택자
+	  > 선택자A + 선택자B 
+	    : 선택자A 의 요소 중에서 바로 뒤에 위치하는 선택자B 의 요소를 선택합니다
+	- 일반 형제 선택자
+	  > 선택자A ~ 선택자B
+	    : 선택자A 의 형제 요소중에서 선택자A 뒤에 위치하는 선택자B 요소를 모두 선택합니다
+*/
+
+/* h2 요소의 바로 뒤에 위치하는 h3 요소의 색상을 red 로 지정 */
+h2 + h3 {
+	color: red;
+}
+
+/* h2 요소의 뒤에 위치하는 h3 요소의 background-color 를 orange 로 지정 */
+h2 ~ h3 { 
+	background-color: orange;
+}
+
+</style>
+</head>
+<body>
+	<h1>동위 선택자</h1>
+	<h2> 제목 - 2 </h2>
+	<h3> 제목 - 3 </h3>
+	<h3> 제목 - 3 </h3>
+	<h3> 제목 - 3 </h3>
+	<h3> 제목 - 3 </h3>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

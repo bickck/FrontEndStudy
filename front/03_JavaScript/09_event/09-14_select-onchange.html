@@ -1,0 +1,64 @@
+
+<!-- 09-14_select-onchange.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>select image</title>
+</head>
+<body>
+	<h1>select 이미지</h1>
+	<form action="">
+		<select id="fruits" onchange="selectImage()">
+			<option value="event_image/strawberry.png"> 딸기 </option>
+			<option value="event_image/banana.png"> 바나나 </option>
+			<option value="event_image/apple.png"> 사과 </option>
+		</select>
+		<br>
+		<img id="fruit_image" src="event_image/strawberry.png">
+	</form>
+	<!-- script -->
+	<script>
+		function selectImage(){
+			let sel = document.getElementById('fruits');
+			let img = document.getElementById('fruit_image');
+			img.src = sel.options[sel.selectedIndex].value;
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

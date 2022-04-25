@@ -1,0 +1,72 @@
+
+<!-- 10_BOM/10-02_timer.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>setTimeout</title>
+<script>
+/*
+	# 타임아웃 코드 1회 호출
+	- let timeID = setTimeout( timeCode, msec )
+	  > setTimeout 은 msec 후에 timeCode 를 1회 실행하고, 타이머 ID 를 반환합니다
+	  * timeCode : 타임아웃 자바스크립트 코드
+	    msec     : 타임아웃 지연시간. 밀리초
+	- clearTimeout( timerID )
+	  > timerID 해제
+ */
+</script>
+</head>
+<body>
+	<h1>timer</h1>
+	<p>이미지에 마우스를 3초간 올려놓으세요</p>
+	<img id="img" src="bom_image/naver.gif" onmouseover="startTimer(3000)" onmouseout="cancelTimer()">
+	<!-- script -->
+	<script>
+		let timeID = null;
+		function startTimer(time){
+			// 타이머 시작
+			timeID = setTimeout("load('http://www.naver.com')", time);
+			// 시작 메시지
+			document.getElementById('img').title="타이머 작동~";
+		}
+		function load(url){
+			window.open(url);
+		}
+		function cancelTimer(){
+			if(timeID != null){
+				clearTimeout(timeID);
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

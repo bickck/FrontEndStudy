@@ -1,0 +1,62 @@
+
+<!-- 09_event/09-12_radio-value.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>radio 버튼</title>
+</head>
+<body>
+	<h1>radio 버튼의 value 출력</h1>
+	<form action="">
+		<input type="radio" name="city" value="seoul" checked> 서울
+		<input type="radio" name="city" value="busan"> 부산
+		<input type="radio" name="city" value="jejudo"> 제주도
+		<input type="button" value="find checked" onclick="findChecked()">
+	</form>
+	<script>
+		function findChecked(){
+			let found = null;
+			let city = document.getElementsByName('city');
+			for(let i=0 ; i<city.length ; i++){
+				if(city[i].checked == true){
+					found = city[i];
+				}
+			}
+			if(found != null){
+				alert(found.value + " 선택");
+			} else {
+				alert("선택해 주세요..")	;
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+
+<!-- 09_table/09-4_Quiz_css-table.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz_css-table</title>
+<style type="text/css">
+/* board */
+.board {
+	border: 1px solid black;
+}
+.board th, .board td {
+	border: 1px solid black;
+}
+.board thead, .board tfoot {
+	background-color: royalblue;
+	color: white;
+}
+.board tbody {
+	background-color: beige;
+}
+.board thead>tr>th:first-of-type {
+	width: 40px;
+}
+.board thead>tr>th:nth-of-type(2) {
+	width: 450px;
+}
+.board thead>tr>th:nth-of-type(3) {
+	width: 100px;
+}
+.board thead>tr>th:nth-of-type(4) {
+	width: 100px;
+}
+.board thead>tr>th:last-of-type {
+	width: 50px;
+}
+.board tbody>tr>td:nth-of-type(3) {
+	width: 68px;
+}
+</style>
+</head>
+<body>
+	<table class="board">
+		<thead>
+			<tr>
+				<th>번호</th><th colspan="2">제목</th><th>작성자</th><th>작성일</th><th>조회수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>3</td>
+				<td>제목 3</td>
+				<td><input type="button" value="바로가기"></td>
+				<td>user01</td>
+				<td>2000-01-01</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>제목 2</td>
+				<td><button>바로가기</button></td>
+				<td>user02</td>
+				<td>2000-01-01</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>제목 1</td>
+				<td><input type="button" value="바로가기"></td>
+				<td>user03</td>
+				<td>2000-01-01</td>
+				<td>5</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="4">목록수</th>
+				<th colspan="2">3개</th>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

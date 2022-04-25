@@ -1,0 +1,81 @@
+
+<!-- 10_float/10-2_float-clear.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>clear</title>
+<style type="text/css">
+/*  
+	# clear
+	- float 속성을 해제합니다
+	- left -> float: left 속성 해제
+	  right -> float: right 속성 해제
+	  both  -> left, right 속성 둘다 해제
+	  
+*/
+
+div {
+	font-size: 20px; 
+	font-weight: bold;
+}
+.wrap {
+	width: 600px; height: 600px;
+}
+.red{
+	width: 600px; height: 100px; background-color: red;
+}
+.green{
+	float: left;
+	width: 300px; height: 400px; background-color: green;
+}
+.blue{
+	float: right;
+	width: 300px; height: 400px; background-color: blue;
+}
+.orange{
+	clear: both;
+	width: 600px; height: 100px; background-color: orange;
+}
+</style>
+</head>
+<body>
+	<h1>clear</h1>
+	<div class="wrap">
+		<div class="red">red</div>
+		<div class="green">green</div>
+		<div class="blue">blue</div>
+		<div class="orange">orange</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

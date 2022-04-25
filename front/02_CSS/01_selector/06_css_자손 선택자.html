@@ -1,0 +1,79 @@
+
+<!-- 01_selector/06_css_자손 선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 자손 선택자 </title>
+<style type="text/css">
+/*  
+	# 자손 선택자
+	- 특정한 태그 아래에 있는 자손을 선택할 때 사용합니다
+	- 선택자A > 선택자 B
+*/
+
+/* id 속성값으로 section 을 가지는 태그의 자손 위치에 있는 h3 태그에 적용 */
+#section > h3 {
+	color: red;
+}
+
+/* id 속성값으로 section 을 가지는 태그의 ul태그 아래 li태그에 적용 */
+#section > ul > li {
+	color: brown;
+}
+
+/* id 속성값으로 content 를 가지는 태그의 자손 p태그에 적용  */
+#content > p {
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<h1> 자손 선택자 </h1>
+	<div id="section">
+		<h3> 음료 </h3>
+		<ul>
+			<li> coffee </li>
+			<li> 오렌지 주스</li>
+			<li> 콜라 </li>
+			<li> 사이다 </li>
+		</ul>
+	</div>
+	<br>
+	
+	<h1>heading</h1>
+	<div id="content">
+		<p> 문단 A </p>
+		<p> 문단 B </p>
+		<span><p> 문단 C </p></span>
+	</div>
+	<p> 문단 D </p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
