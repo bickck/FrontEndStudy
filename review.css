@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.container-fluid {
+    width: 100%;
+    height: 100%;
+}
+.row {
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFA;
+}
+
+.picture-area {
+    width: 100%;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.review-area {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.section-restaurant {
+    background-color: rgb(109, 109, 59);
+    width: 85%;
+}
+.restaurant-header {
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.inner {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* header-area  */
+.section-restaurant .restaurant-header,
+                    .section-restaurant-detail,
+                    .section-restaurant-reviews  {
+    background-color: blanchedalmond;    
+}
+
+.restaurant-title-wrap {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+}
+.restaurant-title-wrap .section-tilte {
+    display: flex;
+}
+.section-tilte {
+    width: 100%;
+}
+.restaurant-header .restaurant-status {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* restaurant-detail-area */
+.section-restaurant-detail {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section-tilte .btn-area {
+    margin-left: 70%;
+}
+.section-restaurant-detail table {
+    width: 100%;
+}
+
+.detail-col-size {
+    width: 100px;
+}
+
+/* restaurant-review-area */
+.section-restaurant-reviews {
+    background-color: rebeccapurple;
+}
+.map {
+    background-color: aqua;
+    width: 15%;
+}
